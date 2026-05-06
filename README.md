@@ -327,8 +327,13 @@ This artefact contributes to the emerging literature at the intersection of agen
 
 ## 11. References
 
-1. Zhao, T., Lyu, J., Jones, S., Garber, H., Pasquali, S., & Mehta, D. (2025). *AlphaAgents: Large Language Model based Multi-Agents for Equity Portfolio Constructions.* arXiv preprint arXiv:2508.11152. https://arxiv.org/pdf/2508.11152
-2. Brin, S., & Page, L. (1998). The anatomy of a large-scale hypertextual Web search engine. *Computer Networks and ISDN Systems*, 30(1–7), 107–117.
-3. Sharpe, W. F. (1966). Mutual fund performance. *The Journal of Business*, 39(1), 119–138.
-4. Stellato, B., Banjac, G., Goulart, P., Bemporad, A., & Boyd, S. (2020). OSQP: An operator splitting solver for quadratic programs. *Mathematical Programming Computation*, 12(4), 637–672.
+
+
+1. Zhao, T., Lyu, J., Jones, S., Garber, H., Pasquali, S., & Mehta, D. (2025). [*AlphaAgents: Large Language Model based Multi-Agents for Equity Portfolio Constructions.*](https://arxiv.org/pdf/2508.11152)
+
+2. Brin, S., & Page, L. (1998). [The anatomy of a large-scale hypertextual Web search engine.](https://snap.stanford.edu/class/cs224w-readings/Brin98Anatomy.pdf) *Computer Networks and ISDN Systems*, 30(1–7), 107–117.
+
+3. Sharpe, W. F. (1966). [Mutual fund performance.](https://finance.martinsewell.com/fund-performance/Sharpe1966.pdf) *The Journal of Business*, 39(1), 119–138.
+
+4. Stellato, B., Banjac, G., Goulart, P., Bemporad, A., & Boyd, S. (2020). [OSQP: An operator splitting solver for quadratic programs.](https://arxiv.org/pdf/1711.08013) *Mathematical Programming Computation*, 12(4), 637–672.
 
