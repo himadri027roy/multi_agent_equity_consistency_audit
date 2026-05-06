@@ -1,0 +1,181 @@
+date,ticker,company_name,agent_type,risk_profile,decision,confidence,evidence_ids
+2024-02-01,AAPL,Apple Inc.,valuation,risk_neutral,HOLD,0.6339061034014968,AAPL_PRICE_VOLUME_JAN2024
+2024-02-01,AAPL,Apple Inc.,fundamental,risk_neutral,BUY,0.8200000000000001,AAPL_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,AAPL,Apple Inc.,sentiment,risk_neutral,BUY,0.8166666666666667,AAPL_GDELT_202401_000
+2024-02-01,AAPL,Apple Inc.,multi_agent,risk_neutral,BUY,0.7802041634870761,AAPL_risk_neutral_DEBATE
+2024-02-01,AAPL,Apple Inc.,valuation,risk_averse,HOLD,0.8186226035612595,AAPL_PRICE_VOLUME_JAN2024
+2024-02-01,AAPL,Apple Inc.,fundamental,risk_averse,HOLD,0.8200000000000001,AAPL_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,AAPL,Apple Inc.,sentiment,risk_averse,BUY,0.8166666666666667,AAPL_GDELT_202401_000
+2024-02-01,AAPL,Apple Inc.,multi_agent,risk_averse,HOLD,0.6831538137450149,AAPL_risk_averse_DEBATE
+2024-02-01,AAPL,Apple Inc.,valuation,risk_seeking,HOLD,0.6488064960907476,AAPL_PRICE_VOLUME_JAN2024
+2024-02-01,AAPL,Apple Inc.,fundamental,risk_seeking,BUY,0.8200000000000001,AAPL_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,AAPL,Apple Inc.,sentiment,risk_seeking,BUY,0.8166666666666667,AAPL_GDELT_202401_000
+2024-02-01,AAPL,Apple Inc.,multi_agent,risk_seeking,BUY,0.7790293026994063,AAPL_risk_seeking_DEBATE
+2024-02-01,MSFT,Microsoft Corp.,valuation,risk_neutral,BUY,0.6004070031958887,MSFT_PRICE_VOLUME_JAN2024
+2024-02-01,MSFT,Microsoft Corp.,fundamental,risk_neutral,BUY,0.9,MSFT_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,MSFT,Microsoft Corp.,sentiment,risk_neutral,HOLD,0.55,MSFT_GDELT_202401_000
+2024-02-01,MSFT,Microsoft Corp.,multi_agent,risk_neutral,BUY,0.7829401432078196,MSFT_risk_neutral_DEBATE
+2024-02-01,MSFT,Microsoft Corp.,valuation,risk_averse,BUY,0.6436503753934403,MSFT_PRICE_VOLUME_JAN2024
+2024-02-01,MSFT,Microsoft Corp.,fundamental,risk_averse,BUY,0.9,MSFT_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,MSFT,Microsoft Corp.,sentiment,risk_averse,HOLD,0.55,MSFT_GDELT_202401_000
+2024-02-01,MSFT,Microsoft Corp.,multi_agent,risk_averse,BUY,0.7843252332786648,MSFT_risk_averse_DEBATE
+2024-02-01,MSFT,Microsoft Corp.,valuation,risk_seeking,BUY,0.7660703727115417,MSFT_PRICE_VOLUME_JAN2024
+2024-02-01,MSFT,Microsoft Corp.,fundamental,risk_seeking,BUY,0.9,MSFT_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,MSFT,Microsoft Corp.,sentiment,risk_seeking,BUY,0.55,MSFT_GDELT_202401_000
+2024-02-01,MSFT,Microsoft Corp.,multi_agent,risk_seeking,BUY,0.85,MSFT_risk_seeking_DEBATE
+2024-02-01,NVDA,NVIDIA Corp.,valuation,risk_neutral,BUY,0.8566406381315067,NVDA_PRICE_VOLUME_JAN2024
+2024-02-01,NVDA,NVIDIA Corp.,fundamental,risk_neutral,BUY,0.9,NVDA_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,NVDA,NVIDIA Corp.,sentiment,risk_neutral,BUY,0.8700000000000001,NVDA_GDELT_202401_000
+2024-02-01,NVDA,NVIDIA Corp.,multi_agent,risk_neutral,BUY,0.85,NVDA_risk_neutral_DEBATE
+2024-02-01,NVDA,NVIDIA Corp.,valuation,risk_averse,HOLD,0.5832098606630913,NVDA_PRICE_VOLUME_JAN2024
+2024-02-01,NVDA,NVIDIA Corp.,fundamental,risk_averse,BUY,0.9,NVDA_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,NVDA,NVIDIA Corp.,sentiment,risk_averse,BUY,0.8700000000000001,NVDA_GDELT_202401_000
+2024-02-01,NVDA,NVIDIA Corp.,multi_agent,risk_averse,BUY,0.7880410274480626,NVDA_risk_averse_DEBATE
+2024-02-01,NVDA,NVIDIA Corp.,valuation,risk_seeking,BUY,0.95,NVDA_PRICE_VOLUME_JAN2024
+2024-02-01,NVDA,NVIDIA Corp.,fundamental,risk_seeking,BUY,0.9,NVDA_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,NVDA,NVIDIA Corp.,sentiment,risk_seeking,BUY,0.8700000000000001,NVDA_GDELT_202401_000
+2024-02-01,NVDA,NVIDIA Corp.,multi_agent,risk_seeking,BUY,0.85,NVDA_risk_seeking_DEBATE
+2024-02-01,AMD,Advanced Micro Devices Inc.,valuation,risk_neutral,BUY,0.6789914603617094,AMD_PRICE_VOLUME_JAN2024
+2024-02-01,AMD,Advanced Micro Devices Inc.,fundamental,risk_neutral,BUY,0.8200000000000001,AMD_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,AMD,Advanced Micro Devices Inc.,sentiment,risk_neutral,BUY,0.6642857142857144,AMD_GDELT_202401_000
+2024-02-01,AMD,Advanced Micro Devices Inc.,multi_agent,risk_neutral,BUY,0.85,AMD_risk_neutral_DEBATE
+2024-02-01,AMD,Advanced Micro Devices Inc.,valuation,risk_averse,SELL,0.8862517883332119,AMD_PRICE_VOLUME_JAN2024
+2024-02-01,AMD,Advanced Micro Devices Inc.,fundamental,risk_averse,BUY,0.8200000000000001,AMD_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,AMD,Advanced Micro Devices Inc.,sentiment,risk_averse,BUY,0.6642857142857144,AMD_GDELT_202401_000
+2024-02-01,AMD,Advanced Micro Devices Inc.,multi_agent,risk_averse,HOLD,0.6630694436696114,AMD_risk_averse_DEBATE
+2024-02-01,AMD,Advanced Micro Devices Inc.,valuation,risk_seeking,BUY,0.95,AMD_PRICE_VOLUME_JAN2024
+2024-02-01,AMD,Advanced Micro Devices Inc.,fundamental,risk_seeking,BUY,0.8200000000000001,AMD_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,AMD,Advanced Micro Devices Inc.,sentiment,risk_seeking,BUY,0.6642857142857144,AMD_GDELT_202401_000
+2024-02-01,AMD,Advanced Micro Devices Inc.,multi_agent,risk_seeking,BUY,0.85,AMD_risk_seeking_DEBATE
+2024-02-01,AVGO,Broadcom Inc.,valuation,risk_neutral,BUY,0.5649082219223859,AVGO_PRICE_VOLUME_JAN2024
+2024-02-01,AVGO,Broadcom Inc.,fundamental,risk_neutral,BUY,0.9,AVGO_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,AVGO,Broadcom Inc.,sentiment,risk_neutral,BUY,0.8166666666666667,AVGO_GDELT_202401_000
+2024-02-01,AVGO,Broadcom Inc.,multi_agent,risk_neutral,BUY,0.85,AVGO_risk_neutral_DEBATE
+2024-02-01,AVGO,Broadcom Inc.,valuation,risk_averse,SELL,0.8247343789377017,AVGO_PRICE_VOLUME_JAN2024
+2024-02-01,AVGO,Broadcom Inc.,fundamental,risk_averse,BUY,0.9,AVGO_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,AVGO,Broadcom Inc.,sentiment,risk_averse,BUY,0.8166666666666667,AVGO_GDELT_202401_000
+2024-02-01,AVGO,Broadcom Inc.,multi_agent,risk_averse,HOLD,0.6877402141302786,AVGO_risk_averse_DEBATE
+2024-02-01,AVGO,Broadcom Inc.,valuation,risk_seeking,BUY,0.8807038752357574,AVGO_PRICE_VOLUME_JAN2024
+2024-02-01,AVGO,Broadcom Inc.,fundamental,risk_seeking,BUY,0.9,AVGO_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,AVGO,Broadcom Inc.,sentiment,risk_seeking,BUY,0.8166666666666667,AVGO_GDELT_202401_000
+2024-02-01,AVGO,Broadcom Inc.,multi_agent,risk_seeking,BUY,0.85,AVGO_risk_seeking_DEBATE
+2024-02-01,ADBE,Adobe Inc.,valuation,risk_neutral,BUY,0.5624945428553996,ADBE_PRICE_VOLUME_JAN2024
+2024-02-01,ADBE,Adobe Inc.,fundamental,risk_neutral,BUY,0.9,ADBE_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,ADBE,Adobe Inc.,sentiment,risk_neutral,HOLD,0.55,ADBE_NO_PUBLIC_NEWS_JAN2024
+2024-02-01,ADBE,Adobe Inc.,multi_agent,risk_neutral,BUY,0.7816768333667579,ADBE_risk_neutral_DEBATE
+2024-02-01,ADBE,Adobe Inc.,valuation,risk_averse,BUY,0.7500544717921334,ADBE_PRICE_VOLUME_JAN2024
+2024-02-01,ADBE,Adobe Inc.,fundamental,risk_averse,BUY,0.9,ADBE_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,ADBE,Adobe Inc.,sentiment,risk_averse,HOLD,0.55,ADBE_NO_PUBLIC_NEWS_JAN2024
+2024-02-01,ADBE,Adobe Inc.,multi_agent,risk_averse,BUY,0.7875015474557798,ADBE_risk_averse_DEBATE
+2024-02-01,ADBE,Adobe Inc.,valuation,risk_seeking,BUY,0.794546387245815,ADBE_PRICE_VOLUME_JAN2024
+2024-02-01,ADBE,Adobe Inc.,fundamental,risk_seeking,BUY,0.9,ADBE_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,ADBE,Adobe Inc.,sentiment,risk_seeking,BUY,0.55,ADBE_NO_PUBLIC_NEWS_JAN2024
+2024-02-01,ADBE,Adobe Inc.,multi_agent,risk_seeking,BUY,0.85,ADBE_risk_seeking_DEBATE
+2024-02-01,CRM,Salesforce Inc.,valuation,risk_neutral,BUY,0.6099570234361822,CRM_PRICE_VOLUME_JAN2024
+2024-02-01,CRM,Salesforce Inc.,fundamental,risk_neutral,BUY,0.9,CRM_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,CRM,Salesforce Inc.,sentiment,risk_neutral,SELL,0.8166666666666667,CRM_GDELT_202401_000
+2024-02-01,CRM,Salesforce Inc.,multi_agent,risk_neutral,BUY,0.6744953255353112,CRM_risk_neutral_DEBATE
+2024-02-01,CRM,Salesforce Inc.,valuation,risk_averse,BUY,0.705589797862934,CRM_PRICE_VOLUME_JAN2024
+2024-02-01,CRM,Salesforce Inc.,fundamental,risk_averse,BUY,0.9,CRM_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,CRM,Salesforce Inc.,sentiment,risk_averse,SELL,0.8166666666666667,CRM_GDELT_202401_000
+2024-02-01,CRM,Salesforce Inc.,multi_agent,risk_averse,HOLD,0.6814244014567503,CRM_risk_averse_DEBATE
+2024-02-01,CRM,Salesforce Inc.,valuation,risk_seeking,BUY,0.854738995126464,CRM_PRICE_VOLUME_JAN2024
+2024-02-01,CRM,Salesforce Inc.,fundamental,risk_seeking,BUY,0.9,CRM_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,CRM,Salesforce Inc.,sentiment,risk_seeking,SELL,0.8166666666666667,CRM_GDELT_202401_000
+2024-02-01,CRM,Salesforce Inc.,multi_agent,risk_seeking,BUY,0.6912022889268322,CRM_risk_seeking_DEBATE
+2024-02-01,ORCL,Oracle Corp.,valuation,risk_neutral,BUY,0.6005897711498437,ORCL_PRICE_VOLUME_JAN2024
+2024-02-01,ORCL,Oracle Corp.,fundamental,risk_neutral,BUY,0.8200000000000001,ORCL_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,ORCL,Oracle Corp.,sentiment,risk_neutral,HOLD,0.55,ORCL_NO_PUBLIC_NEWS_JAN2024
+2024-02-01,ORCL,Oracle Corp.,multi_agent,risk_neutral,BUY,0.7802239349797454,ORCL_risk_neutral_DEBATE
+2024-02-01,ORCL,Oracle Corp.,valuation,risk_averse,BUY,0.6638547390574212,ORCL_PRICE_VOLUME_JAN2024
+2024-02-01,ORCL,Oracle Corp.,fundamental,risk_averse,BUY,0.8200000000000001,ORCL_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,ORCL,Oracle Corp.,sentiment,risk_averse,HOLD,0.55,ORCL_NO_PUBLIC_NEWS_JAN2024
+2024-02-01,ORCL,Oracle Corp.,multi_agent,risk_averse,BUY,0.7823943852235369,ORCL_risk_averse_DEBATE
+2024-02-01,ORCL,Oracle Corp.,valuation,risk_seeking,BUY,0.7883077964036584,ORCL_PRICE_VOLUME_JAN2024
+2024-02-01,ORCL,Oracle Corp.,fundamental,risk_seeking,BUY,0.8200000000000001,ORCL_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,ORCL,Oracle Corp.,sentiment,risk_seeking,BUY,0.55,ORCL_NO_PUBLIC_NEWS_JAN2024
+2024-02-01,ORCL,Oracle Corp.,multi_agent,risk_seeking,BUY,0.85,ORCL_risk_seeking_DEBATE
+2024-02-01,INTC,Intel Corp.,valuation,risk_neutral,SELL,0.8673206998470496,INTC_PRICE_VOLUME_JAN2024
+2024-02-01,INTC,Intel Corp.,fundamental,risk_neutral,BUY,0.8200000000000001,INTC_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,INTC,Intel Corp.,sentiment,risk_neutral,HOLD,0.55,INTC_GDELT_202401_000
+2024-02-01,INTC,Intel Corp.,multi_agent,risk_neutral,HOLD,0.6052876527547307,INTC_risk_neutral_DEBATE
+2024-02-01,INTC,Intel Corp.,valuation,risk_averse,SELL,0.95,INTC_PRICE_VOLUME_JAN2024
+2024-02-01,INTC,Intel Corp.,fundamental,risk_averse,BUY,0.8200000000000001,INTC_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,INTC,Intel Corp.,sentiment,risk_averse,HOLD,0.55,INTC_GDELT_202401_000
+2024-02-01,INTC,Intel Corp.,multi_agent,risk_averse,HOLD,0.6140086206896551,INTC_risk_averse_DEBATE
+2024-02-01,INTC,Intel Corp.,valuation,risk_seeking,SELL,0.6260654945784131,INTC_PRICE_VOLUME_JAN2024
+2024-02-01,INTC,Intel Corp.,fundamental,risk_seeking,BUY,0.8200000000000001,INTC_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,INTC,Intel Corp.,sentiment,risk_seeking,BUY,0.55,INTC_GDELT_202401_000
+2024-02-01,INTC,Intel Corp.,multi_agent,risk_seeking,BUY,0.6931751121696926,INTC_risk_seeking_DEBATE
+2024-02-01,QCOM,Qualcomm Inc.,valuation,risk_neutral,BUY,0.5635188082965088,QCOM_PRICE_VOLUME_JAN2024
+2024-02-01,QCOM,Qualcomm Inc.,fundamental,risk_neutral,BUY,0.9,QCOM_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,QCOM,Qualcomm Inc.,sentiment,risk_neutral,BUY,0.8928571428571429,QCOM_GDELT_202401_000
+2024-02-01,QCOM,Qualcomm Inc.,multi_agent,risk_neutral,BUY,0.85,QCOM_risk_neutral_DEBATE
+2024-02-01,QCOM,Qualcomm Inc.,valuation,risk_averse,HOLD,0.8187375763309117,QCOM_PRICE_VOLUME_JAN2024
+2024-02-01,QCOM,Qualcomm Inc.,fundamental,risk_averse,BUY,0.9,QCOM_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,QCOM,Qualcomm Inc.,sentiment,risk_averse,BUY,0.8928571428571429,QCOM_GDELT_202401_000
+2024-02-01,QCOM,Qualcomm Inc.,multi_agent,risk_averse,BUY,0.7716247480595441,QCOM_risk_averse_DEBATE
+2024-02-01,QCOM,Qualcomm Inc.,valuation,risk_seeking,BUY,0.8094136995213448,QCOM_PRICE_VOLUME_JAN2024
+2024-02-01,QCOM,Qualcomm Inc.,fundamental,risk_seeking,BUY,0.9,QCOM_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,QCOM,Qualcomm Inc.,sentiment,risk_seeking,BUY,0.8928571428571429,QCOM_GDELT_202401_000
+2024-02-01,QCOM,Qualcomm Inc.,multi_agent,risk_seeking,BUY,0.85,QCOM_risk_seeking_DEBATE
+2024-02-01,CSCO,Cisco Systems Inc.,valuation,risk_neutral,BUY,0.6141987950448702,CSCO_PRICE_VOLUME_JAN2024
+2024-02-01,CSCO,Cisco Systems Inc.,fundamental,risk_neutral,BUY,0.9,CSCO_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,CSCO,Cisco Systems Inc.,sentiment,risk_neutral,BUY,0.8166666666666667,CSCO_GDELT_202401_000
+2024-02-01,CSCO,Cisco Systems Inc.,multi_agent,risk_neutral,BUY,0.85,CSCO_risk_neutral_DEBATE
+2024-02-01,CSCO,Cisco Systems Inc.,valuation,risk_averse,BUY,0.7791854548645827,CSCO_PRICE_VOLUME_JAN2024
+2024-02-01,CSCO,Cisco Systems Inc.,fundamental,risk_averse,BUY,0.9,CSCO_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,CSCO,Cisco Systems Inc.,sentiment,risk_averse,BUY,0.8166666666666667,CSCO_GDELT_202401_000
+2024-02-01,CSCO,Cisco Systems Inc.,multi_agent,risk_averse,BUY,0.85,CSCO_risk_averse_DEBATE
+2024-02-01,CSCO,Cisco Systems Inc.,valuation,risk_seeking,HOLD,0.6511470385514454,CSCO_PRICE_VOLUME_JAN2024
+2024-02-01,CSCO,Cisco Systems Inc.,fundamental,risk_seeking,BUY,0.9,CSCO_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,CSCO,Cisco Systems Inc.,sentiment,risk_seeking,BUY,0.8166666666666667,CSCO_GDELT_202401_000
+2024-02-01,CSCO,Cisco Systems Inc.,multi_agent,risk_seeking,BUY,0.7812501826984457,CSCO_risk_seeking_DEBATE
+2024-02-01,NOW,ServiceNow Inc.,valuation,risk_neutral,BUY,0.6439811249136188,NOW_PRICE_VOLUME_JAN2024
+2024-02-01,NOW,ServiceNow Inc.,fundamental,risk_neutral,BUY,0.9,NOW_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,NOW,ServiceNow Inc.,sentiment,risk_neutral,HOLD,0.55,NOW_GDELT_202401_000
+2024-02-01,NOW,ServiceNow Inc.,multi_agent,risk_neutral,BUY,0.7843356067712062,NOW_risk_neutral_DEBATE
+2024-02-01,NOW,ServiceNow Inc.,valuation,risk_averse,BUY,0.6458538219916867,NOW_PRICE_VOLUME_JAN2024
+2024-02-01,NOW,ServiceNow Inc.,fundamental,risk_averse,BUY,0.9,NOW_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,NOW,ServiceNow Inc.,sentiment,risk_averse,HOLD,0.55,NOW_GDELT_202401_000
+2024-02-01,NOW,ServiceNow Inc.,multi_agent,risk_averse,BUY,0.7843942795259766,NOW_risk_averse_DEBATE
+2024-02-01,NOW,ServiceNow Inc.,valuation,risk_seeking,BUY,0.8677990925540725,NOW_PRICE_VOLUME_JAN2024
+2024-02-01,NOW,ServiceNow Inc.,fundamental,risk_seeking,BUY,0.9,NOW_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,NOW,ServiceNow Inc.,sentiment,risk_seeking,BUY,0.55,NOW_GDELT_202401_000
+2024-02-01,NOW,ServiceNow Inc.,multi_agent,risk_seeking,BUY,0.85,NOW_risk_seeking_DEBATE
+2024-02-01,PANW,Palo Alto Networks Inc.,valuation,risk_neutral,BUY,0.7074587811496187,PANW_PRICE_VOLUME_JAN2024
+2024-02-01,PANW,Palo Alto Networks Inc.,fundamental,risk_neutral,BUY,0.8200000000000001,PANW_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,PANW,Palo Alto Networks Inc.,sentiment,risk_neutral,HOLD,0.55,PANW_NO_PUBLIC_NEWS_JAN2024
+2024-02-01,PANW,Palo Alto Networks Inc.,multi_agent,risk_neutral,BUY,0.7838133679244839,PANW_risk_neutral_DEBATE
+2024-02-01,PANW,Palo Alto Networks Inc.,valuation,risk_averse,BUY,0.6425412188503814,PANW_PRICE_VOLUME_JAN2024
+2024-02-01,PANW,Palo Alto Networks Inc.,fundamental,risk_averse,HOLD,0.8200000000000001,PANW_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,PANW,Palo Alto Networks Inc.,sentiment,risk_averse,HOLD,0.55,PANW_NO_PUBLIC_NEWS_JAN2024
+2024-02-01,PANW,Palo Alto Networks Inc.,multi_agent,risk_averse,HOLD,0.6798171501820741,PANW_risk_averse_DEBATE
+2024-02-01,PANW,Palo Alto Networks Inc.,valuation,risk_seeking,BUY,0.95,PANW_PRICE_VOLUME_JAN2024
+2024-02-01,PANW,Palo Alto Networks Inc.,fundamental,risk_seeking,BUY,0.8200000000000001,PANW_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,PANW,Palo Alto Networks Inc.,sentiment,risk_seeking,BUY,0.55,PANW_NO_PUBLIC_NEWS_JAN2024
+2024-02-01,PANW,Palo Alto Networks Inc.,multi_agent,risk_seeking,BUY,0.85,PANW_risk_seeking_DEBATE
+2024-02-01,ZS,Zscaler Inc.,valuation,risk_neutral,BUY,0.60112823718362,ZS_PRICE_VOLUME_JAN2024
+2024-02-01,ZS,Zscaler Inc.,fundamental,risk_neutral,HOLD,0.66,ZS_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,ZS,Zscaler Inc.,sentiment,risk_neutral,SELL,0.8700000000000001,ZS_GDELT_202401_000
+2024-02-01,ZS,Zscaler Inc.,multi_agent,risk_neutral,HOLD,0.6315410117191852,ZS_risk_neutral_DEBATE
+2024-02-01,ZS,Zscaler Inc.,valuation,risk_averse,HOLD,0.7824794010247207,ZS_PRICE_VOLUME_JAN2024
+2024-02-01,ZS,Zscaler Inc.,fundamental,risk_averse,HOLD,0.66,ZS_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,ZS,Zscaler Inc.,sentiment,risk_averse,SELL,0.8700000000000001,ZS_GDELT_202401_000
+2024-02-01,ZS,Zscaler Inc.,multi_agent,risk_averse,SELL,0.694054891863521,ZS_risk_averse_DEBATE
+2024-02-01,ZS,Zscaler Inc.,valuation,risk_seeking,BUY,0.9176501338853517,ZS_PRICE_VOLUME_JAN2024
+2024-02-01,ZS,Zscaler Inc.,fundamental,risk_seeking,BUY,0.66,ZS_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,ZS,Zscaler Inc.,sentiment,risk_seeking,SELL,0.8700000000000001,ZS_GDELT_202401_000
+2024-02-01,ZS,Zscaler Inc.,multi_agent,risk_seeking,BUY,0.6722785217634476,ZS_risk_seeking_DEBATE
+2024-02-01,SNOW,Snowflake Inc.,valuation,risk_neutral,BUY,0.6353682193588183,SNOW_PRICE_VOLUME_JAN2024
+2024-02-01,SNOW,Snowflake Inc.,fundamental,risk_neutral,BUY,0.74,SNOW_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,SNOW,Snowflake Inc.,sentiment,risk_neutral,HOLD,0.55,SNOW_GDELT_202401_000
+2024-02-01,SNOW,Snowflake Inc.,multi_agent,risk_neutral,BUY,0.7785850890144068,SNOW_risk_neutral_DEBATE
+2024-02-01,SNOW,Snowflake Inc.,valuation,risk_averse,SELL,0.95,SNOW_PRICE_VOLUME_JAN2024
+2024-02-01,SNOW,Snowflake Inc.,fundamental,risk_averse,HOLD,0.74,SNOW_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,SNOW,Snowflake Inc.,sentiment,risk_averse,HOLD,0.55,SNOW_GDELT_202401_000
+2024-02-01,SNOW,Snowflake Inc.,multi_agent,risk_averse,SELL,0.7060267857142857,SNOW_risk_averse_DEBATE
+2024-02-01,SNOW,Snowflake Inc.,valuation,risk_seeking,BUY,0.8176780586555765,SNOW_PRICE_VOLUME_JAN2024
+2024-02-01,SNOW,Snowflake Inc.,fundamental,risk_seeking,BUY,0.74,SNOW_SEC_XBRL_SUMMARY_ASOF_2024-01-31
+2024-02-01,SNOW,Snowflake Inc.,sentiment,risk_seeking,BUY,0.55,SNOW_GDELT_202401_000
+2024-02-01,SNOW,Snowflake Inc.,multi_agent,risk_seeking,BUY,0.85,SNOW_risk_seeking_DEBATE

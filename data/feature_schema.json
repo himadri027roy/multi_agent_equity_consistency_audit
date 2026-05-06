@@ -1,0 +1,31 @@
+{
+  "valuation": [
+    "ticker",
+    "open",
+    "high",
+    "low",
+    "close",
+    "adjusted_close",
+    "volume"
+  ],
+  "fundamental": [
+    "ticker",
+    "10K",
+    "10Q",
+    "sec_xbrl_companyfacts"
+  ],
+  "sentiment": [
+    "ticker",
+    "news_body",
+    "news_title",
+    "news_url",
+    "news_date"
+  ],
+  "multi_agent": [
+    "valuation_report",
+    "fundamental_report",
+    "sentiment_report",
+    "debate_log",
+    "consensus_decision"
+  ]
+}

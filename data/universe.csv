@@ -1,0 +1,16 @@
+ticker,company_name,sector,industry,benchmark_weight
+AAPL,Apple Inc.,Technology,Consumer Electronics,0.06666666666666667
+MSFT,Microsoft Corp.,Technology,Software,0.06666666666666667
+NVDA,NVIDIA Corp.,Technology,Semiconductors,0.06666666666666667
+AMD,Advanced Micro Devices Inc.,Technology,Semiconductors,0.06666666666666667
+AVGO,Broadcom Inc.,Technology,Semiconductors,0.06666666666666667
+ADBE,Adobe Inc.,Technology,Software,0.06666666666666667
+CRM,Salesforce Inc.,Technology,Software,0.06666666666666667
+ORCL,Oracle Corp.,Technology,Software,0.06666666666666667
+INTC,Intel Corp.,Technology,Semiconductors,0.06666666666666667
+QCOM,Qualcomm Inc.,Technology,Semiconductors,0.06666666666666667
+CSCO,Cisco Systems Inc.,Technology,Networking,0.06666666666666667
+NOW,ServiceNow Inc.,Technology,Software,0.06666666666666667
+PANW,Palo Alto Networks Inc.,Technology,Cybersecurity,0.06666666666666667
+ZS,Zscaler Inc.,Technology,Cybersecurity,0.06666666666666667
+SNOW,Snowflake Inc.,Technology,Software,0.06666666666666667
