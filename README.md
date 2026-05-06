@@ -10,17 +10,22 @@
 ---
 
 
+
 ## Abstract
 
-This repository implements a deterministic auditing solver, `multi_agent_equity_consistency_audit`, designed to reconstruct and validate the complete evidentiary, dialectical, behavioural, and econometric audit chain of an agentic equity research workflow patterned after the AlphaAgents framework of Zhao et al. (2025). The benchmark formalises an equity-research pipeline in which three role-restricted specialist agents — a valuation agent constrained to price-volume evidence, a fundamental agent constrained to filing-derived evidence, and a sentiment agent constrained to news-derived evidence — produce risk-profile-conditioned recommendations that are subsequently reconciled through a structured multi-agent debate. The solver verifies four interlocking audit layers: role-access compliance and claim-evidence support; directed-graph reconstruction of debate logs with PageRank-based speaker influence and terminal-consensus reconciliation; realised portfolio performance under an equal-weight, BUY-only construction with rolling Sharpe diagnostics and an alpha-beta excess-return regression; and risk-profile monotonicity together with a constrained convex projection on risk-averse inclusion scores. The solver emits a single structured JSON object that summarises the entire audit and assigns a discrete consistency signature drawn from the set `{fully_consistent, portfolio_consistent_with_evidence_warnings, risk_profile_inconsistent, globally_inconsistent}`.
+This repository implements a deterministic auditing solver, `multi_agent_equity_consistency_audit`, for reconstructing and validating the complete consistency chain of an agentic equity research benchmark. The benchmark formalizes a workflow in which three role-restricted specialist agents — a valuation agent constrained to price-volume evidence, a fundamental agent constrained to filing-derived evidence, and a sentiment agent constrained to news-derived evidence — generate risk-profile-conditioned recommendations that are reconciled through structured multi-agent debate. The solver verifies four interlocking audit layers: role-access compliance and claim-evidence support; directed-graph reconstruction of debate logs with speaker-level PageRank aggregation and terminal-consensus reconciliation; realized portfolio performance under equal-weight BUY-only construction with rolling Sharpe diagnostics and alpha-beta excess-return regression; and risk-profile monotonicity with a constrained convex projection of risk-averse inclusion scores. The solver emits a single structured JSON object that summarizes the audit and assigns one discrete consistency signature from `{fully_consistent, portfolio_consistent_with_evidence_warnings, risk_profile_inconsistent, globally_inconsistent}`.
 
 ---
 
 ## 1. Background and Motivation
 
-The deployment of multi-agent large language model architectures for portfolio construction, while empirically promising, raises substantive concerns regarding evidentiary integrity, role compartmentalisation, and the reconciliation of dialectical disagreement among specialist agents. The AlphaAgents framework introduced by Zhao et al. (2025) demonstrates that a coordinated debate among role-prompted agents can outperform single-agent baselines on a curated equity universe. However, the validity of such a system rests not solely on realised portfolio performance but on the integrity of the upstream evidence chain. A portfolio that outperforms its benchmark while relying upon claims unsupported by permissible evidence, or upon a debate whose terminal consensus fails to reconcile with the published decision table, constitutes an empirically successful yet methodologically incoherent system. The present solver addresses this gap by treating the multi-agent benchmark as a single coupled audit problem rather than a disjoint collection of validation checks.
 
-The intellectual premise of the audit is that a faithful reconstruction must enforce a strict separation between the analysis window, in which evidence is gathered and decisions are formed, and the portfolio window, in which realised returns are evaluated. Any leakage of portfolio-window information into the decision-formation process would constitute a lookahead violation. The solver therefore enforces, by contractual validation, that the portfolio window begins strictly after the analysis window terminates and that all evidence timestamps respect this temporal partition.
+
+
+The deployment of multi-agent language-model architectures for portfolio construction raises substantive concerns regarding evidentiary integrity, role compartmentalization, and the reconciliation of disagreement among specialist agents. A coordinated debate among role-prompted agents may improve portfolio selection, but realized portfolio performance alone is not sufficient to establish methodological coherence. A portfolio that outperforms its benchmark while relying on unsupported claims, unauthorized evidence channels, or a terminal consensus that fails to reconcile with the dataset decision table is economically successful but audit-inconsistent. This solver treats the benchmark as a single coupled consistency problem rather than a collection of independent validation checks.
+
+
+The audit enforces a strict separation between the analysis window, where evidence and stock-level features are used to form decisions, and the portfolio window, where realized returns are evaluated. Portfolio-window prices must not be used to form, revise, or reinterpret analysis-window decisions. Available evidence dates are interpreted within the analysis window, while portfolio-window prices are reserved for realized-performance evaluation.
 
 The full reference paper is available at https://arxiv.org/pdf/2508.11152.
 
@@ -38,11 +43,17 @@ The evidence layer constructs a canonical mapping from evidence identifiers to e
 supported | missing_evidence | role_access_violation | decision_mismatch | unsupported
 ```
 
-A claim attains `supported` status if and only if the referenced evidence exists in the canonical map, the evidence channel is permitted for the agent's role under the feature-schema contract, and the report's final recommendation agrees with the corresponding decision-table record under the matched ticker, agent, and risk profile. Role-access compliance is enforced through the canonical mapping `{valuation → price-volume, fundamental → filings, sentiment → news, multi_agent → reports/debate}`, with any cross-channel reference classified as a `role_access_violation`.
+
+
+
+A claim attains `supported` status if and only if the referenced evidence exists in the canonical map, the evidence channel is permitted for the agent's role under the feature-schema contract, and the report's final recommendation agrees with the corresponding decision-table record under the matched ticker, agent, and risk profile. Role-access compliance is enforced through the canonical mapping `{valuation → price-volume, fundamental → filings, sentiment → news, multi_agent → specialist reports, debate evidence, and consensus decisions}`, with unauthorized cross-channel references classified as `role_access_violation`.
 
 ### 2.2 Debate Layer
 
 For each debate identifier, a directed acyclic graph $G = (V, E)$ is constructed using `networkx.DiGraph`, in which each message constitutes a node and each `reply_to` reference induces a directed edge from the referenced message to the replying message. The graph must satisfy three structural invariants: acyclicity, enforced by round-monotonic edge ordering; minimum specialist participation, requiring at least the configured number of turns from each of the three specialist agents; and a unique terminal manager message bearing the configured termination token.
+
+
+
 
 Speaker influence is computed via the standard PageRank algorithm
 
@@ -53,25 +64,54 @@ $$
 with subsequent aggregation by speaker. Unresolved dissent is flagged when the terminal decision diverges from at least two specialists' final explicit decisions, providing a structural diagnostic for premature consensus.
 
 ### 2.3 Portfolio Layer
-
-For each `(agent, risk_profile)` pair, an equal-weight portfolio is constructed from BUY decisions only, with HOLD and SELL excluded by the canonical `HOLD_POLICY = "exclude"` contract. Daily simple returns are computed from adjusted close prices, and the standard suite of risk-adjusted performance statistics is reported:
-
-| Metric | Formulation |
-|---|---|
-| Cumulative return | $C_p = \prod_t (1 + R_{p,t}) - 1$ |
-| Annualised volatility | $\sigma_p = \sqrt{252} \cdot \mathrm{std}(R_{p,t})$ |
-| Sharpe ratio | $S_p = \dfrac{\mathrm{mean}(R_{p,t} - R_{f,t})}{\mathrm{std}(R_{p,t} - R_{f,t})} \cdot \sqrt{252}$ |
-| Maximum drawdown | $D_p = \min_t \left( \dfrac{V_{p,t}}{\max_{\tau \le t} V_{p,\tau}} - 1 \right)$ |
-| Rolling Sharpe (window $w$) | $S^{(w)}_{p,t} = \dfrac{\mathrm{mean}(R^{e}_{t-w+1:t})}{\mathrm{std}(R^{e}_{t-w+1:t})} \cdot \sqrt{252}$ |
-
+ 
+For each `(agent, risk_profile)` pair, an equal-weight portfolio is constructed from BUY decisions only, with HOLD and SELL excluded by the canonical `HOLD_POLICY = "exclude"` contract. Daily simple returns are computed from adjusted close prices, and the standard suite of risk-adjusted performance statistics is reported in the formulations that follow.
+ 
+The cumulative return over the portfolio window is given by
+ 
+$$
+C_p = \prod_t (1 + R_{p,t}) - 1.
+$$
+ 
+The annualised volatility is computed from the sample standard deviation of daily returns,
+ 
+$$
+\sigma_p = \sqrt{252} \cdot \mathrm{std}(R_{p,t}).
+$$
+ 
+The Sharpe ratio is constructed from the excess return relative to the daily risk-free rate $R_{f,t}$,
+ 
+$$
+S_p = \frac{\mathrm{mean}(R_{p,t} - R_{f,t})}{\mathrm{std}(R_{p,t} - R_{f,t})} \cdot \sqrt{252}.
+$$
+ 
+The maximum drawdown is the minimum trough-to-peak ratio of the cumulative wealth process 
+$$ 
+V_{p,t} = \prod_{\tau \le t}(1 + R_{p,\tau}) 
+$$,
+ 
+$$
+D_p = \min_t \left( \frac{V_{p,t}}{\max_{\tau \le t} V_{p,\tau}} - 1 \right).
+$$
+ 
+The rolling Sharpe ratio over a window of length $w$, computed from the excess-return process 
+$$ 
+R^{e}_t = R_{p,t} - R_{f,t}
+$$,
+is given by
+ 
+$$
+S^{(w)}_{p,t} = \frac{\mathrm{mean}\!\left(R^{e}_{t-w+1:t}\right)}{\mathrm{std}\!\left(R^{e}_{t-w+1:t}\right)} \cdot \sqrt{252}.
+$$
+ 
 Sample standard deviations employ the unbiased denominator $(n-1)$. Where the excess-return standard deviation collapses below the configured tolerance, the corresponding Sharpe value is set to `None` rather than infinity, in accordance with numerical hygiene.
-
+ 
 An ordinary least squares regression on excess returns,
-
+ 
 $$
 R_{p,t} - R_{f,t} = \alpha + \beta (R_{b,t} - R_{f,t}) + \epsilon_t,
 $$
-
+ 
 is fitted via `statsmodels.api.OLS` to characterise each portfolio's relationship to the equal-weight universe benchmark, with $\alpha$ classified as `positive_alpha`, `negative_alpha`, or `flat_alpha` under the tie tolerance.
 
 ### 2.4 Risk-Profile Layer and Convex Projection
@@ -96,7 +136,9 @@ where $b_i \in \{0,1\}$ denotes the observed risk-averse BUY indicator, $v_i$ th
 
 ## 3. Numerical Precision Protocol
 
-Given the precision-sensitive character of compound returns, drawdown extrema, Sharpe-ratio components, and rolling-window aggregates, all intermediate arithmetic is conducted in `mpmath` arbitrary-precision floating-point at eighty decimal digits. Native Python `float` and `int` conversions occur exclusively at the boundary of the final JSON construction. Tolerance comparisons employ a configurable `tie_tol` parameter (default $10^{-12}$), which governs ranking ties, alpha sign classification, and component-score equality tests. All emitted floating-point quantities are rounded to twelve decimal places, with negative zero canonicalised to positive zero.
+Precision-sensitive intermediate arithmetic is handled with `mpmath`, including tolerance comparisons, return compounding, cumulative-return products, Sharpe-ratio components, rolling-window statistics, drawdown extrema, Jaccard ratios, ranking comparisons, and convex-projection summaries. The configurable tolerance parameter `tie_tol` defaults to `1e-12` and governs equality checks, rank ties, alpha sign classification, zero-volatility Sharpe handling, and audit-signature component comparisons. Native Python numeric types are used only when constructing the final JSON-compatible output. All derived floating-point quantities in the emitted result are rounded to twelve decimal places.
+
+
 
 ---
 
@@ -180,6 +222,9 @@ The global consistency score is defined as the unweighted arithmetic mean of fiv
 | `risk_profile_inconsistent` | 1 | At least one monotonicity violation; all consensus reconciled |
 | `globally_inconsistent` | 0 | Otherwise |
 
+
+
+
 ---
 
 ## 7. Installation and Invocation
@@ -232,17 +277,22 @@ print(result["summary"]["global_consistency_score"])
 
 ---
 
+
+
+
 ## 8. Validation Suite
 
 The validation harness, located at `tests/test.py`, comprises forty deterministic test cases organised along the following thematic axes.
 
-- **Schema and contract validation** (Cases 10–15, 29–30): malformed JSON/JSONL/CSV, missing keys, duplicate identifiers, ticker-coverage inconsistencies, contract violations.
-- **Evidence-layer correctness** (Cases 1–2, 16–17, 28, 34, 40): claim status classification, role-access enforcement, decision-mismatch detection, missing-evidence handling.
-- **Debate-layer correctness** (Cases 3, 18–21, 39): graph reconstruction, PageRank aggregation, terminal validity, unresolved dissent, duplicate manager rejection.
-- **Portfolio-layer correctness** (Cases 4–5, 9, 22–23, 27, 31–33, 36, 38): metric reproduction, risk-free fill semantics, rolling Sharpe non-triviality, OLS residual degrees of freedom, drawdown ranking by magnitude, configurable risk-free series naming.
-- **Risk-profile correctness** (Cases 6, 24, 35, 37): selected sets, Jaccard similarities, monotonicity violation enumeration, signature assignment.
-- **Determinism and rounding** (Cases 8, 25): whitespace invariance, twelve-decimal rounding.
-- **Library invocation** (Case 26): verification of `statsmodels.OLS`, `networkx.DiGraph`, and `cvxpy` engagement.
+- schema and contract validation: malformed files, missing keys, duplicate identifiers, invalid labels, inconsistent ticker coverage, and configuration-contract violations;
+- evidence-layer correctness: claim status classification, role-access enforcement, decision-mismatch detection, and missing-evidence handling;
+- debate-layer correctness: graph reconstruction, terminal-message validation, specialist-turn coverage, consensus reconciliation, and unresolved-dissent detection;
+- portfolio-layer correctness: adjusted-close return reconstruction, risk-free-rate filling, cumulative return, volatility, drawdown, Sharpe ratio, rolling Sharpe ratio, and alpha-beta diagnostics;
+- risk-profile correctness: selected-set construction, Jaccard similarity, feature aggregation, monotonicity violation enumeration, and convex-projection reporting;
+- determinism and rounding: whitespace normalization, stable ranking, tolerance-controlled comparisons, and twelve-decimal output rounding.
+
+The test suite should be executable without internet access and should use only local fixture files.
+
 
 The full suite is executed via:
 
