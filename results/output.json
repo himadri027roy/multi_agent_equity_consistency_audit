@@ -1,0 +1,3310 @@
+{
+  "dataset_profile": {
+    "ticker_count": 15,
+    "agent_count": 4,
+    "risk_profile_count": 3,
+    "decision_count": 180,
+    "report_count": 180,
+    "claim_count": 180,
+    "debate_count": 45,
+    "price_observation_count": 1575,
+    "portfolio_trading_day_count": 83
+  },
+  "evidence_audit": {
+    "claim_status_counts": {
+      "supported": 180,
+      "missing_evidence": 0,
+      "role_access_violation": 0,
+      "decision_mismatch": 0,
+      "unsupported": 0
+    },
+    "agent_claim_scores": {
+      "valuation": {
+        "claim_count": 45,
+        "supported_count": 45,
+        "support_rate": 1.0,
+        "violation_count": 0
+      },
+      "fundamental": {
+        "claim_count": 45,
+        "supported_count": 45,
+        "support_rate": 1.0,
+        "violation_count": 0
+      },
+      "sentiment": {
+        "claim_count": 45,
+        "supported_count": 45,
+        "support_rate": 1.0,
+        "violation_count": 0
+      },
+      "multi_agent": {
+        "claim_count": 45,
+        "supported_count": 45,
+        "support_rate": 1.0,
+        "violation_count": 0
+      }
+    },
+    "claim_level_results": {
+      "AAPL_risk_neutral_valuation_claim_001": {
+        "ticker": "AAPL",
+        "agent": "valuation",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "AAPL_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "AAPL_risk_neutral_fundamental_claim_001": {
+        "ticker": "AAPL",
+        "agent": "fundamental",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "AAPL_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "AAPL_risk_neutral_sentiment_claim_001": {
+        "ticker": "AAPL",
+        "agent": "sentiment",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "AAPL_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "AAPL_risk_neutral_multi_agent_claim_001": {
+        "ticker": "AAPL",
+        "agent": "multi_agent",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "AAPL_risk_neutral_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "AAPL_risk_averse_valuation_claim_001": {
+        "ticker": "AAPL",
+        "agent": "valuation",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "AAPL_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "AAPL_risk_averse_fundamental_claim_001": {
+        "ticker": "AAPL",
+        "agent": "fundamental",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "AAPL_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "AAPL_risk_averse_sentiment_claim_001": {
+        "ticker": "AAPL",
+        "agent": "sentiment",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "AAPL_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "AAPL_risk_averse_multi_agent_claim_001": {
+        "ticker": "AAPL",
+        "agent": "multi_agent",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "AAPL_risk_averse_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "AAPL_risk_seeking_valuation_claim_001": {
+        "ticker": "AAPL",
+        "agent": "valuation",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "AAPL_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "AAPL_risk_seeking_fundamental_claim_001": {
+        "ticker": "AAPL",
+        "agent": "fundamental",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "AAPL_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "AAPL_risk_seeking_sentiment_claim_001": {
+        "ticker": "AAPL",
+        "agent": "sentiment",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "AAPL_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "AAPL_risk_seeking_multi_agent_claim_001": {
+        "ticker": "AAPL",
+        "agent": "multi_agent",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "AAPL_risk_seeking_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "MSFT_risk_neutral_valuation_claim_001": {
+        "ticker": "MSFT",
+        "agent": "valuation",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "MSFT_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "MSFT_risk_neutral_fundamental_claim_001": {
+        "ticker": "MSFT",
+        "agent": "fundamental",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "MSFT_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "MSFT_risk_neutral_sentiment_claim_001": {
+        "ticker": "MSFT",
+        "agent": "sentiment",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "MSFT_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "MSFT_risk_neutral_multi_agent_claim_001": {
+        "ticker": "MSFT",
+        "agent": "multi_agent",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "MSFT_risk_neutral_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "MSFT_risk_averse_valuation_claim_001": {
+        "ticker": "MSFT",
+        "agent": "valuation",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "MSFT_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "MSFT_risk_averse_fundamental_claim_001": {
+        "ticker": "MSFT",
+        "agent": "fundamental",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "MSFT_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "MSFT_risk_averse_sentiment_claim_001": {
+        "ticker": "MSFT",
+        "agent": "sentiment",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "MSFT_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "MSFT_risk_averse_multi_agent_claim_001": {
+        "ticker": "MSFT",
+        "agent": "multi_agent",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "MSFT_risk_averse_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "MSFT_risk_seeking_valuation_claim_001": {
+        "ticker": "MSFT",
+        "agent": "valuation",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "MSFT_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "MSFT_risk_seeking_fundamental_claim_001": {
+        "ticker": "MSFT",
+        "agent": "fundamental",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "MSFT_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "MSFT_risk_seeking_sentiment_claim_001": {
+        "ticker": "MSFT",
+        "agent": "sentiment",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "MSFT_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "MSFT_risk_seeking_multi_agent_claim_001": {
+        "ticker": "MSFT",
+        "agent": "multi_agent",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "MSFT_risk_seeking_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "NVDA_risk_neutral_valuation_claim_001": {
+        "ticker": "NVDA",
+        "agent": "valuation",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "NVDA_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "NVDA_risk_neutral_fundamental_claim_001": {
+        "ticker": "NVDA",
+        "agent": "fundamental",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "NVDA_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "NVDA_risk_neutral_sentiment_claim_001": {
+        "ticker": "NVDA",
+        "agent": "sentiment",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "NVDA_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "NVDA_risk_neutral_multi_agent_claim_001": {
+        "ticker": "NVDA",
+        "agent": "multi_agent",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "NVDA_risk_neutral_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "NVDA_risk_averse_valuation_claim_001": {
+        "ticker": "NVDA",
+        "agent": "valuation",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "NVDA_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "NVDA_risk_averse_fundamental_claim_001": {
+        "ticker": "NVDA",
+        "agent": "fundamental",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "NVDA_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "NVDA_risk_averse_sentiment_claim_001": {
+        "ticker": "NVDA",
+        "agent": "sentiment",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "NVDA_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "NVDA_risk_averse_multi_agent_claim_001": {
+        "ticker": "NVDA",
+        "agent": "multi_agent",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "NVDA_risk_averse_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "NVDA_risk_seeking_valuation_claim_001": {
+        "ticker": "NVDA",
+        "agent": "valuation",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "NVDA_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "NVDA_risk_seeking_fundamental_claim_001": {
+        "ticker": "NVDA",
+        "agent": "fundamental",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "NVDA_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "NVDA_risk_seeking_sentiment_claim_001": {
+        "ticker": "NVDA",
+        "agent": "sentiment",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "NVDA_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "NVDA_risk_seeking_multi_agent_claim_001": {
+        "ticker": "NVDA",
+        "agent": "multi_agent",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "NVDA_risk_seeking_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "AMD_risk_neutral_valuation_claim_001": {
+        "ticker": "AMD",
+        "agent": "valuation",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "AMD_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "AMD_risk_neutral_fundamental_claim_001": {
+        "ticker": "AMD",
+        "agent": "fundamental",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "AMD_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "AMD_risk_neutral_sentiment_claim_001": {
+        "ticker": "AMD",
+        "agent": "sentiment",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "AMD_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "AMD_risk_neutral_multi_agent_claim_001": {
+        "ticker": "AMD",
+        "agent": "multi_agent",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "AMD_risk_neutral_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "AMD_risk_averse_valuation_claim_001": {
+        "ticker": "AMD",
+        "agent": "valuation",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "AMD_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "AMD_risk_averse_fundamental_claim_001": {
+        "ticker": "AMD",
+        "agent": "fundamental",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "AMD_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "AMD_risk_averse_sentiment_claim_001": {
+        "ticker": "AMD",
+        "agent": "sentiment",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "AMD_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "AMD_risk_averse_multi_agent_claim_001": {
+        "ticker": "AMD",
+        "agent": "multi_agent",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "AMD_risk_averse_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "AMD_risk_seeking_valuation_claim_001": {
+        "ticker": "AMD",
+        "agent": "valuation",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "AMD_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "AMD_risk_seeking_fundamental_claim_001": {
+        "ticker": "AMD",
+        "agent": "fundamental",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "AMD_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "AMD_risk_seeking_sentiment_claim_001": {
+        "ticker": "AMD",
+        "agent": "sentiment",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "AMD_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "AMD_risk_seeking_multi_agent_claim_001": {
+        "ticker": "AMD",
+        "agent": "multi_agent",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "AMD_risk_seeking_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "AVGO_risk_neutral_valuation_claim_001": {
+        "ticker": "AVGO",
+        "agent": "valuation",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "AVGO_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "AVGO_risk_neutral_fundamental_claim_001": {
+        "ticker": "AVGO",
+        "agent": "fundamental",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "AVGO_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "AVGO_risk_neutral_sentiment_claim_001": {
+        "ticker": "AVGO",
+        "agent": "sentiment",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "AVGO_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "AVGO_risk_neutral_multi_agent_claim_001": {
+        "ticker": "AVGO",
+        "agent": "multi_agent",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "AVGO_risk_neutral_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "AVGO_risk_averse_valuation_claim_001": {
+        "ticker": "AVGO",
+        "agent": "valuation",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "AVGO_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "AVGO_risk_averse_fundamental_claim_001": {
+        "ticker": "AVGO",
+        "agent": "fundamental",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "AVGO_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "AVGO_risk_averse_sentiment_claim_001": {
+        "ticker": "AVGO",
+        "agent": "sentiment",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "AVGO_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "AVGO_risk_averse_multi_agent_claim_001": {
+        "ticker": "AVGO",
+        "agent": "multi_agent",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "AVGO_risk_averse_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "AVGO_risk_seeking_valuation_claim_001": {
+        "ticker": "AVGO",
+        "agent": "valuation",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "AVGO_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "AVGO_risk_seeking_fundamental_claim_001": {
+        "ticker": "AVGO",
+        "agent": "fundamental",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "AVGO_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "AVGO_risk_seeking_sentiment_claim_001": {
+        "ticker": "AVGO",
+        "agent": "sentiment",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "AVGO_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "AVGO_risk_seeking_multi_agent_claim_001": {
+        "ticker": "AVGO",
+        "agent": "multi_agent",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "AVGO_risk_seeking_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "ADBE_risk_neutral_valuation_claim_001": {
+        "ticker": "ADBE",
+        "agent": "valuation",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "ADBE_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "ADBE_risk_neutral_fundamental_claim_001": {
+        "ticker": "ADBE",
+        "agent": "fundamental",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "ADBE_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "ADBE_risk_neutral_sentiment_claim_001": {
+        "ticker": "ADBE",
+        "agent": "sentiment",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "ADBE_NO_PUBLIC_NEWS_JAN2024",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "ADBE_risk_neutral_multi_agent_claim_001": {
+        "ticker": "ADBE",
+        "agent": "multi_agent",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "ADBE_risk_neutral_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "ADBE_risk_averse_valuation_claim_001": {
+        "ticker": "ADBE",
+        "agent": "valuation",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "ADBE_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "ADBE_risk_averse_fundamental_claim_001": {
+        "ticker": "ADBE",
+        "agent": "fundamental",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "ADBE_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "ADBE_risk_averse_sentiment_claim_001": {
+        "ticker": "ADBE",
+        "agent": "sentiment",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "ADBE_NO_PUBLIC_NEWS_JAN2024",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "ADBE_risk_averse_multi_agent_claim_001": {
+        "ticker": "ADBE",
+        "agent": "multi_agent",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "ADBE_risk_averse_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "ADBE_risk_seeking_valuation_claim_001": {
+        "ticker": "ADBE",
+        "agent": "valuation",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "ADBE_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "ADBE_risk_seeking_fundamental_claim_001": {
+        "ticker": "ADBE",
+        "agent": "fundamental",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "ADBE_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "ADBE_risk_seeking_sentiment_claim_001": {
+        "ticker": "ADBE",
+        "agent": "sentiment",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "ADBE_NO_PUBLIC_NEWS_JAN2024",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "ADBE_risk_seeking_multi_agent_claim_001": {
+        "ticker": "ADBE",
+        "agent": "multi_agent",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "ADBE_risk_seeking_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "CRM_risk_neutral_valuation_claim_001": {
+        "ticker": "CRM",
+        "agent": "valuation",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "CRM_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "CRM_risk_neutral_fundamental_claim_001": {
+        "ticker": "CRM",
+        "agent": "fundamental",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "CRM_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "CRM_risk_neutral_sentiment_claim_001": {
+        "ticker": "CRM",
+        "agent": "sentiment",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "CRM_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "CRM_risk_neutral_multi_agent_claim_001": {
+        "ticker": "CRM",
+        "agent": "multi_agent",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "CRM_risk_neutral_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "CRM_risk_averse_valuation_claim_001": {
+        "ticker": "CRM",
+        "agent": "valuation",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "CRM_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "CRM_risk_averse_fundamental_claim_001": {
+        "ticker": "CRM",
+        "agent": "fundamental",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "CRM_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "CRM_risk_averse_sentiment_claim_001": {
+        "ticker": "CRM",
+        "agent": "sentiment",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "CRM_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "CRM_risk_averse_multi_agent_claim_001": {
+        "ticker": "CRM",
+        "agent": "multi_agent",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "CRM_risk_averse_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "CRM_risk_seeking_valuation_claim_001": {
+        "ticker": "CRM",
+        "agent": "valuation",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "CRM_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "CRM_risk_seeking_fundamental_claim_001": {
+        "ticker": "CRM",
+        "agent": "fundamental",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "CRM_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "CRM_risk_seeking_sentiment_claim_001": {
+        "ticker": "CRM",
+        "agent": "sentiment",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "CRM_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "CRM_risk_seeking_multi_agent_claim_001": {
+        "ticker": "CRM",
+        "agent": "multi_agent",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "CRM_risk_seeking_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "ORCL_risk_neutral_valuation_claim_001": {
+        "ticker": "ORCL",
+        "agent": "valuation",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "ORCL_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "ORCL_risk_neutral_fundamental_claim_001": {
+        "ticker": "ORCL",
+        "agent": "fundamental",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "ORCL_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "ORCL_risk_neutral_sentiment_claim_001": {
+        "ticker": "ORCL",
+        "agent": "sentiment",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "ORCL_NO_PUBLIC_NEWS_JAN2024",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "ORCL_risk_neutral_multi_agent_claim_001": {
+        "ticker": "ORCL",
+        "agent": "multi_agent",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "ORCL_risk_neutral_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "ORCL_risk_averse_valuation_claim_001": {
+        "ticker": "ORCL",
+        "agent": "valuation",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "ORCL_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "ORCL_risk_averse_fundamental_claim_001": {
+        "ticker": "ORCL",
+        "agent": "fundamental",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "ORCL_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "ORCL_risk_averse_sentiment_claim_001": {
+        "ticker": "ORCL",
+        "agent": "sentiment",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "ORCL_NO_PUBLIC_NEWS_JAN2024",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "ORCL_risk_averse_multi_agent_claim_001": {
+        "ticker": "ORCL",
+        "agent": "multi_agent",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "ORCL_risk_averse_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "ORCL_risk_seeking_valuation_claim_001": {
+        "ticker": "ORCL",
+        "agent": "valuation",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "ORCL_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "ORCL_risk_seeking_fundamental_claim_001": {
+        "ticker": "ORCL",
+        "agent": "fundamental",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "ORCL_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "ORCL_risk_seeking_sentiment_claim_001": {
+        "ticker": "ORCL",
+        "agent": "sentiment",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "ORCL_NO_PUBLIC_NEWS_JAN2024",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "ORCL_risk_seeking_multi_agent_claim_001": {
+        "ticker": "ORCL",
+        "agent": "multi_agent",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "ORCL_risk_seeking_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "INTC_risk_neutral_valuation_claim_001": {
+        "ticker": "INTC",
+        "agent": "valuation",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "INTC_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "INTC_risk_neutral_fundamental_claim_001": {
+        "ticker": "INTC",
+        "agent": "fundamental",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "INTC_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "INTC_risk_neutral_sentiment_claim_001": {
+        "ticker": "INTC",
+        "agent": "sentiment",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "INTC_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "INTC_risk_neutral_multi_agent_claim_001": {
+        "ticker": "INTC",
+        "agent": "multi_agent",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "INTC_risk_neutral_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "INTC_risk_averse_valuation_claim_001": {
+        "ticker": "INTC",
+        "agent": "valuation",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "INTC_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "INTC_risk_averse_fundamental_claim_001": {
+        "ticker": "INTC",
+        "agent": "fundamental",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "INTC_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "INTC_risk_averse_sentiment_claim_001": {
+        "ticker": "INTC",
+        "agent": "sentiment",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "INTC_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "INTC_risk_averse_multi_agent_claim_001": {
+        "ticker": "INTC",
+        "agent": "multi_agent",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "INTC_risk_averse_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "INTC_risk_seeking_valuation_claim_001": {
+        "ticker": "INTC",
+        "agent": "valuation",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "INTC_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "INTC_risk_seeking_fundamental_claim_001": {
+        "ticker": "INTC",
+        "agent": "fundamental",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "INTC_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "INTC_risk_seeking_sentiment_claim_001": {
+        "ticker": "INTC",
+        "agent": "sentiment",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "INTC_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "INTC_risk_seeking_multi_agent_claim_001": {
+        "ticker": "INTC",
+        "agent": "multi_agent",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "INTC_risk_seeking_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "QCOM_risk_neutral_valuation_claim_001": {
+        "ticker": "QCOM",
+        "agent": "valuation",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "QCOM_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "QCOM_risk_neutral_fundamental_claim_001": {
+        "ticker": "QCOM",
+        "agent": "fundamental",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "QCOM_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "QCOM_risk_neutral_sentiment_claim_001": {
+        "ticker": "QCOM",
+        "agent": "sentiment",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "QCOM_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "QCOM_risk_neutral_multi_agent_claim_001": {
+        "ticker": "QCOM",
+        "agent": "multi_agent",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "QCOM_risk_neutral_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "QCOM_risk_averse_valuation_claim_001": {
+        "ticker": "QCOM",
+        "agent": "valuation",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "QCOM_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "QCOM_risk_averse_fundamental_claim_001": {
+        "ticker": "QCOM",
+        "agent": "fundamental",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "QCOM_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "QCOM_risk_averse_sentiment_claim_001": {
+        "ticker": "QCOM",
+        "agent": "sentiment",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "QCOM_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "QCOM_risk_averse_multi_agent_claim_001": {
+        "ticker": "QCOM",
+        "agent": "multi_agent",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "QCOM_risk_averse_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "QCOM_risk_seeking_valuation_claim_001": {
+        "ticker": "QCOM",
+        "agent": "valuation",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "QCOM_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "QCOM_risk_seeking_fundamental_claim_001": {
+        "ticker": "QCOM",
+        "agent": "fundamental",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "QCOM_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "QCOM_risk_seeking_sentiment_claim_001": {
+        "ticker": "QCOM",
+        "agent": "sentiment",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "QCOM_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "QCOM_risk_seeking_multi_agent_claim_001": {
+        "ticker": "QCOM",
+        "agent": "multi_agent",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "QCOM_risk_seeking_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "CSCO_risk_neutral_valuation_claim_001": {
+        "ticker": "CSCO",
+        "agent": "valuation",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "CSCO_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "CSCO_risk_neutral_fundamental_claim_001": {
+        "ticker": "CSCO",
+        "agent": "fundamental",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "CSCO_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "CSCO_risk_neutral_sentiment_claim_001": {
+        "ticker": "CSCO",
+        "agent": "sentiment",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "CSCO_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "CSCO_risk_neutral_multi_agent_claim_001": {
+        "ticker": "CSCO",
+        "agent": "multi_agent",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "CSCO_risk_neutral_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "CSCO_risk_averse_valuation_claim_001": {
+        "ticker": "CSCO",
+        "agent": "valuation",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "CSCO_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "CSCO_risk_averse_fundamental_claim_001": {
+        "ticker": "CSCO",
+        "agent": "fundamental",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "CSCO_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "CSCO_risk_averse_sentiment_claim_001": {
+        "ticker": "CSCO",
+        "agent": "sentiment",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "CSCO_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "CSCO_risk_averse_multi_agent_claim_001": {
+        "ticker": "CSCO",
+        "agent": "multi_agent",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "CSCO_risk_averse_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "CSCO_risk_seeking_valuation_claim_001": {
+        "ticker": "CSCO",
+        "agent": "valuation",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "CSCO_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "CSCO_risk_seeking_fundamental_claim_001": {
+        "ticker": "CSCO",
+        "agent": "fundamental",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "CSCO_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "CSCO_risk_seeking_sentiment_claim_001": {
+        "ticker": "CSCO",
+        "agent": "sentiment",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "CSCO_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "CSCO_risk_seeking_multi_agent_claim_001": {
+        "ticker": "CSCO",
+        "agent": "multi_agent",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "CSCO_risk_seeking_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "NOW_risk_neutral_valuation_claim_001": {
+        "ticker": "NOW",
+        "agent": "valuation",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "NOW_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "NOW_risk_neutral_fundamental_claim_001": {
+        "ticker": "NOW",
+        "agent": "fundamental",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "NOW_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "NOW_risk_neutral_sentiment_claim_001": {
+        "ticker": "NOW",
+        "agent": "sentiment",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "NOW_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "NOW_risk_neutral_multi_agent_claim_001": {
+        "ticker": "NOW",
+        "agent": "multi_agent",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "NOW_risk_neutral_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "NOW_risk_averse_valuation_claim_001": {
+        "ticker": "NOW",
+        "agent": "valuation",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "NOW_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "NOW_risk_averse_fundamental_claim_001": {
+        "ticker": "NOW",
+        "agent": "fundamental",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "NOW_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "NOW_risk_averse_sentiment_claim_001": {
+        "ticker": "NOW",
+        "agent": "sentiment",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "NOW_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "NOW_risk_averse_multi_agent_claim_001": {
+        "ticker": "NOW",
+        "agent": "multi_agent",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "NOW_risk_averse_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "NOW_risk_seeking_valuation_claim_001": {
+        "ticker": "NOW",
+        "agent": "valuation",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "NOW_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "NOW_risk_seeking_fundamental_claim_001": {
+        "ticker": "NOW",
+        "agent": "fundamental",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "NOW_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "NOW_risk_seeking_sentiment_claim_001": {
+        "ticker": "NOW",
+        "agent": "sentiment",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "NOW_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "NOW_risk_seeking_multi_agent_claim_001": {
+        "ticker": "NOW",
+        "agent": "multi_agent",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "NOW_risk_seeking_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "PANW_risk_neutral_valuation_claim_001": {
+        "ticker": "PANW",
+        "agent": "valuation",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "PANW_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "PANW_risk_neutral_fundamental_claim_001": {
+        "ticker": "PANW",
+        "agent": "fundamental",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "PANW_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "PANW_risk_neutral_sentiment_claim_001": {
+        "ticker": "PANW",
+        "agent": "sentiment",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "PANW_NO_PUBLIC_NEWS_JAN2024",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "PANW_risk_neutral_multi_agent_claim_001": {
+        "ticker": "PANW",
+        "agent": "multi_agent",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "PANW_risk_neutral_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "PANW_risk_averse_valuation_claim_001": {
+        "ticker": "PANW",
+        "agent": "valuation",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "PANW_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "PANW_risk_averse_fundamental_claim_001": {
+        "ticker": "PANW",
+        "agent": "fundamental",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "PANW_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "PANW_risk_averse_sentiment_claim_001": {
+        "ticker": "PANW",
+        "agent": "sentiment",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "PANW_NO_PUBLIC_NEWS_JAN2024",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "PANW_risk_averse_multi_agent_claim_001": {
+        "ticker": "PANW",
+        "agent": "multi_agent",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "PANW_risk_averse_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "PANW_risk_seeking_valuation_claim_001": {
+        "ticker": "PANW",
+        "agent": "valuation",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "PANW_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "PANW_risk_seeking_fundamental_claim_001": {
+        "ticker": "PANW",
+        "agent": "fundamental",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "PANW_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "PANW_risk_seeking_sentiment_claim_001": {
+        "ticker": "PANW",
+        "agent": "sentiment",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "PANW_NO_PUBLIC_NEWS_JAN2024",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "PANW_risk_seeking_multi_agent_claim_001": {
+        "ticker": "PANW",
+        "agent": "multi_agent",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "PANW_risk_seeking_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "ZS_risk_neutral_valuation_claim_001": {
+        "ticker": "ZS",
+        "agent": "valuation",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "ZS_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "ZS_risk_neutral_fundamental_claim_001": {
+        "ticker": "ZS",
+        "agent": "fundamental",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "ZS_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "ZS_risk_neutral_sentiment_claim_001": {
+        "ticker": "ZS",
+        "agent": "sentiment",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "ZS_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "ZS_risk_neutral_multi_agent_claim_001": {
+        "ticker": "ZS",
+        "agent": "multi_agent",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "ZS_risk_neutral_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "ZS_risk_averse_valuation_claim_001": {
+        "ticker": "ZS",
+        "agent": "valuation",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "ZS_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "ZS_risk_averse_fundamental_claim_001": {
+        "ticker": "ZS",
+        "agent": "fundamental",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "ZS_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "ZS_risk_averse_sentiment_claim_001": {
+        "ticker": "ZS",
+        "agent": "sentiment",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "ZS_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "ZS_risk_averse_multi_agent_claim_001": {
+        "ticker": "ZS",
+        "agent": "multi_agent",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "ZS_risk_averse_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "ZS_risk_seeking_valuation_claim_001": {
+        "ticker": "ZS",
+        "agent": "valuation",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "ZS_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "ZS_risk_seeking_fundamental_claim_001": {
+        "ticker": "ZS",
+        "agent": "fundamental",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "ZS_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "ZS_risk_seeking_sentiment_claim_001": {
+        "ticker": "ZS",
+        "agent": "sentiment",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "ZS_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "ZS_risk_seeking_multi_agent_claim_001": {
+        "ticker": "ZS",
+        "agent": "multi_agent",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "ZS_risk_seeking_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "SNOW_risk_neutral_valuation_claim_001": {
+        "ticker": "SNOW",
+        "agent": "valuation",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "SNOW_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "SNOW_risk_neutral_fundamental_claim_001": {
+        "ticker": "SNOW",
+        "agent": "fundamental",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "SNOW_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "SNOW_risk_neutral_sentiment_claim_001": {
+        "ticker": "SNOW",
+        "agent": "sentiment",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "SNOW_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "SNOW_risk_neutral_multi_agent_claim_001": {
+        "ticker": "SNOW",
+        "agent": "multi_agent",
+        "risk_profile": "risk_neutral",
+        "status": "supported",
+        "evidence_id": "SNOW_risk_neutral_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "SNOW_risk_averse_valuation_claim_001": {
+        "ticker": "SNOW",
+        "agent": "valuation",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "SNOW_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "SNOW_risk_averse_fundamental_claim_001": {
+        "ticker": "SNOW",
+        "agent": "fundamental",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "SNOW_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "SNOW_risk_averse_sentiment_claim_001": {
+        "ticker": "SNOW",
+        "agent": "sentiment",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "SNOW_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "SNOW_risk_averse_multi_agent_claim_001": {
+        "ticker": "SNOW",
+        "agent": "multi_agent",
+        "risk_profile": "risk_averse",
+        "status": "supported",
+        "evidence_id": "SNOW_risk_averse_DEBATE",
+        "evidence_source": "debate_log"
+      },
+      "SNOW_risk_seeking_valuation_claim_001": {
+        "ticker": "SNOW",
+        "agent": "valuation",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "SNOW_PRICE_VOLUME_JAN2024",
+        "evidence_source": "price_volume"
+      },
+      "SNOW_risk_seeking_fundamental_claim_001": {
+        "ticker": "SNOW",
+        "agent": "fundamental",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "SNOW_SEC_XBRL_SUMMARY_ASOF_2024-01-31",
+        "evidence_source": "SEC_XBRL_COMPANYFACTS"
+      },
+      "SNOW_risk_seeking_sentiment_claim_001": {
+        "ticker": "SNOW",
+        "agent": "sentiment",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "SNOW_GDELT_202401_000",
+        "evidence_source": "GDELT_NEWS"
+      },
+      "SNOW_risk_seeking_multi_agent_claim_001": {
+        "ticker": "SNOW",
+        "agent": "multi_agent",
+        "risk_profile": "risk_seeking",
+        "status": "supported",
+        "evidence_id": "SNOW_risk_seeking_DEBATE",
+        "evidence_source": "debate_log"
+      }
+    }
+  },
+  "debate_audit": {
+    "debate_level_results": {
+      "AAPL_risk_neutral_DEBATE": {
+        "ticker": "AAPL",
+        "risk_profile": "risk_neutral",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.7802041634870761,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "AAPL_risk_averse_DEBATE": {
+        "ticker": "AAPL",
+        "risk_profile": "risk_averse",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "HOLD",
+        "terminal_confidence": 0.6831538137450149,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "AAPL_risk_seeking_DEBATE": {
+        "ticker": "AAPL",
+        "risk_profile": "risk_seeking",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.7790293026994063,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "MSFT_risk_neutral_DEBATE": {
+        "ticker": "MSFT",
+        "risk_profile": "risk_neutral",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.7829401432078196,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "MSFT_risk_averse_DEBATE": {
+        "ticker": "MSFT",
+        "risk_profile": "risk_averse",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.7843252332786648,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "MSFT_risk_seeking_DEBATE": {
+        "ticker": "MSFT",
+        "risk_profile": "risk_seeking",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.85,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "NVDA_risk_neutral_DEBATE": {
+        "ticker": "NVDA",
+        "risk_profile": "risk_neutral",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.85,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "NVDA_risk_averse_DEBATE": {
+        "ticker": "NVDA",
+        "risk_profile": "risk_averse",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.7880410274480626,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "NVDA_risk_seeking_DEBATE": {
+        "ticker": "NVDA",
+        "risk_profile": "risk_seeking",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.85,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "AMD_risk_neutral_DEBATE": {
+        "ticker": "AMD",
+        "risk_profile": "risk_neutral",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.85,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "AMD_risk_averse_DEBATE": {
+        "ticker": "AMD",
+        "risk_profile": "risk_averse",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "HOLD",
+        "terminal_confidence": 0.6630694436696114,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": true,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "AMD_risk_seeking_DEBATE": {
+        "ticker": "AMD",
+        "risk_profile": "risk_seeking",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.85,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "AVGO_risk_neutral_DEBATE": {
+        "ticker": "AVGO",
+        "risk_profile": "risk_neutral",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.85,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "AVGO_risk_averse_DEBATE": {
+        "ticker": "AVGO",
+        "risk_profile": "risk_averse",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "HOLD",
+        "terminal_confidence": 0.6877402141302786,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": true,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "AVGO_risk_seeking_DEBATE": {
+        "ticker": "AVGO",
+        "risk_profile": "risk_seeking",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.85,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "ADBE_risk_neutral_DEBATE": {
+        "ticker": "ADBE",
+        "risk_profile": "risk_neutral",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.7816768333667579,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "ADBE_risk_averse_DEBATE": {
+        "ticker": "ADBE",
+        "risk_profile": "risk_averse",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.7875015474557798,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "ADBE_risk_seeking_DEBATE": {
+        "ticker": "ADBE",
+        "risk_profile": "risk_seeking",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.85,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "CRM_risk_neutral_DEBATE": {
+        "ticker": "CRM",
+        "risk_profile": "risk_neutral",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.6744953255353112,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "CRM_risk_averse_DEBATE": {
+        "ticker": "CRM",
+        "risk_profile": "risk_averse",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "HOLD",
+        "terminal_confidence": 0.6814244014567503,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": true,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "CRM_risk_seeking_DEBATE": {
+        "ticker": "CRM",
+        "risk_profile": "risk_seeking",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.6912022889268322,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "ORCL_risk_neutral_DEBATE": {
+        "ticker": "ORCL",
+        "risk_profile": "risk_neutral",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.7802239349797454,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "ORCL_risk_averse_DEBATE": {
+        "ticker": "ORCL",
+        "risk_profile": "risk_averse",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.7823943852235369,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "ORCL_risk_seeking_DEBATE": {
+        "ticker": "ORCL",
+        "risk_profile": "risk_seeking",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.85,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "INTC_risk_neutral_DEBATE": {
+        "ticker": "INTC",
+        "risk_profile": "risk_neutral",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "HOLD",
+        "terminal_confidence": 0.6052876527547307,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": true,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "INTC_risk_averse_DEBATE": {
+        "ticker": "INTC",
+        "risk_profile": "risk_averse",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "HOLD",
+        "terminal_confidence": 0.6140086206896551,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": true,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "INTC_risk_seeking_DEBATE": {
+        "ticker": "INTC",
+        "risk_profile": "risk_seeking",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.6931751121696926,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "QCOM_risk_neutral_DEBATE": {
+        "ticker": "QCOM",
+        "risk_profile": "risk_neutral",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.85,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "QCOM_risk_averse_DEBATE": {
+        "ticker": "QCOM",
+        "risk_profile": "risk_averse",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.7716247480595441,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "QCOM_risk_seeking_DEBATE": {
+        "ticker": "QCOM",
+        "risk_profile": "risk_seeking",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.85,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "CSCO_risk_neutral_DEBATE": {
+        "ticker": "CSCO",
+        "risk_profile": "risk_neutral",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.85,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "CSCO_risk_averse_DEBATE": {
+        "ticker": "CSCO",
+        "risk_profile": "risk_averse",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.85,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "CSCO_risk_seeking_DEBATE": {
+        "ticker": "CSCO",
+        "risk_profile": "risk_seeking",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.7812501826984457,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "NOW_risk_neutral_DEBATE": {
+        "ticker": "NOW",
+        "risk_profile": "risk_neutral",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.7843356067712062,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "NOW_risk_averse_DEBATE": {
+        "ticker": "NOW",
+        "risk_profile": "risk_averse",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.7843942795259766,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "NOW_risk_seeking_DEBATE": {
+        "ticker": "NOW",
+        "risk_profile": "risk_seeking",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.85,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "PANW_risk_neutral_DEBATE": {
+        "ticker": "PANW",
+        "risk_profile": "risk_neutral",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.7838133679244839,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "PANW_risk_averse_DEBATE": {
+        "ticker": "PANW",
+        "risk_profile": "risk_averse",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "HOLD",
+        "terminal_confidence": 0.6798171501820741,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "PANW_risk_seeking_DEBATE": {
+        "ticker": "PANW",
+        "risk_profile": "risk_seeking",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.85,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "ZS_risk_neutral_DEBATE": {
+        "ticker": "ZS",
+        "risk_profile": "risk_neutral",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "HOLD",
+        "terminal_confidence": 0.6315410117191852,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": true,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "ZS_risk_averse_DEBATE": {
+        "ticker": "ZS",
+        "risk_profile": "risk_averse",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "SELL",
+        "terminal_confidence": 0.694054891863521,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": true,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "ZS_risk_seeking_DEBATE": {
+        "ticker": "ZS",
+        "risk_profile": "risk_seeking",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.6722785217634476,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "SNOW_risk_neutral_DEBATE": {
+        "ticker": "SNOW",
+        "risk_profile": "risk_neutral",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.7785850890144068,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "SNOW_risk_averse_DEBATE": {
+        "ticker": "SNOW",
+        "risk_profile": "risk_averse",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "SELL",
+        "terminal_confidence": 0.7060267857142857,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": true,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      },
+      "SNOW_risk_seeking_DEBATE": {
+        "ticker": "SNOW",
+        "risk_profile": "risk_seeking",
+        "node_count": 7,
+        "edge_count": 12,
+        "weak_component_count": 1,
+        "turn_count_by_specialist": {
+          "valuation": 2,
+          "fundamental": 2,
+          "sentiment": 2
+        },
+        "terminal_decision": "BUY",
+        "terminal_confidence": 0.85,
+        "termination_valid": true,
+        "consensus_matches_decision_table": true,
+        "unresolved_dissent": false,
+        "speaker_pagerank": {
+          "valuation_agent": 0.199755174583,
+          "fundamental_agent": 0.199755174583,
+          "sentiment_agent": 0.199755174583,
+          "group_chat_manager": 0.40073447625
+        }
+      }
+    },
+    "global_debate_score": 1.0,
+    "invalid_debate_count": 0,
+    "unresolved_dissent_count": 8
+  },
+  "portfolio_audit": {
+    "portfolio_metrics": {
+      "valuation|risk_neutral": {
+        "selected_tickers": [
+          "MSFT",
+          "NVDA",
+          "AMD",
+          "AVGO",
+          "ADBE",
+          "CRM",
+          "ORCL",
+          "QCOM",
+          "CSCO",
+          "NOW",
+          "PANW",
+          "ZS",
+          "SNOW"
+        ],
+        "selected_count": 13,
+        "cumulative_return": -0.022802835542,
+        "annualized_volatility": 0.251430881438,
+        "max_drawdown": -0.124119336517,
+        "sharpe_ratio": -0.372465666883,
+        "benchmark_excess_return": 0.014168948211,
+        "rolling_sharpe_min": -6.585468007396,
+        "rolling_sharpe_max": 5.793692156543,
+        "rolling_sharpe_last": 0.785968251021,
+        "ols_excess_return_model": {
+          "alpha": 0.000242597455,
+          "beta": 1.082281171749,
+          "r_squared": 0.983193616498,
+          "residual_std": 0.002065942924,
+          "trend_label": "positive_alpha"
+        }
+      },
+      "valuation|risk_averse": {
+        "selected_tickers": [
+          "MSFT",
+          "ADBE",
+          "CRM",
+          "ORCL",
+          "CSCO",
+          "NOW",
+          "PANW"
+        ],
+        "selected_count": 7,
+        "cumulative_return": -0.101186981037,
+        "annualized_volatility": 0.245087223816,
+        "max_drawdown": -0.144106869676,
+        "sharpe_ratio": -1.421761198013,
+        "benchmark_excess_return": -0.064215197283,
+        "rolling_sharpe_min": -6.491753052393,
+        "rolling_sharpe_max": 4.121173329757,
+        "rolling_sharpe_last": -1.169143514383,
+        "ols_excess_return_model": {
+          "alpha": -0.000848640431,
+          "beta": 0.941129527621,
+          "r_squared": 0.782445436144,
+          "residual_std": 0.007245478534,
+          "trend_label": "negative_alpha"
+        }
+      },
+      "valuation|risk_seeking": {
+        "selected_tickers": [
+          "MSFT",
+          "NVDA",
+          "AMD",
+          "AVGO",
+          "ADBE",
+          "CRM",
+          "ORCL",
+          "QCOM",
+          "NOW",
+          "PANW",
+          "ZS",
+          "SNOW"
+        ],
+        "selected_count": 12,
+        "cumulative_return": -0.020089762557,
+        "annualized_volatility": 0.268886880949,
+        "max_drawdown": -0.132138926048,
+        "sharpe_ratio": -0.300182834868,
+        "benchmark_excess_return": 0.016882021197,
+        "rolling_sharpe_min": -6.698177965845,
+        "rolling_sharpe_max": 5.9791381712,
+        "rolling_sharpe_last": 0.830589554416,
+        "ols_excess_return_model": {
+          "alpha": 0.000334986438,
+          "beta": 1.154636290331,
+          "r_squared": 0.978468993252,
+          "residual_std": 0.002500716411,
+          "trend_label": "positive_alpha"
+        }
+      },
+      "fundamental|risk_neutral": {
+        "selected_tickers": [
+          "AAPL",
+          "MSFT",
+          "NVDA",
+          "AMD",
+          "AVGO",
+          "ADBE",
+          "CRM",
+          "ORCL",
+          "INTC",
+          "QCOM",
+          "CSCO",
+          "NOW",
+          "PANW",
+          "SNOW"
+        ],
+        "selected_count": 14,
+        "cumulative_return": -0.017899881026,
+        "annualized_volatility": 0.227053140147,
+        "max_drawdown": -0.113796807141,
+        "sharpe_ratio": -0.371113954039,
+        "benchmark_excess_return": 0.019071902728,
+        "rolling_sharpe_min": -6.922213948871,
+        "rolling_sharpe_max": 6.045600132948,
+        "rolling_sharpe_last": 1.411820281877,
+        "ols_excess_return_model": {
+          "alpha": 0.00022143785,
+          "beta": 0.979361058645,
+          "r_squared": 0.987255141139,
+          "residual_std": 0.001624636668,
+          "trend_label": "positive_alpha"
+        }
+      },
+      "fundamental|risk_averse": {
+        "selected_tickers": [
+          "MSFT",
+          "NVDA",
+          "AMD",
+          "AVGO",
+          "ADBE",
+          "CRM",
+          "ORCL",
+          "INTC",
+          "QCOM",
+          "CSCO",
+          "NOW"
+        ],
+        "selected_count": 11,
+        "cumulative_return": 0.012188515669,
+        "annualized_volatility": 0.24133117142,
+        "max_drawdown": -0.132209302674,
+        "sharpe_ratio": 0.044150822597,
+        "benchmark_excess_return": 0.049160299423,
+        "rolling_sharpe_min": -7.391837715709,
+        "rolling_sharpe_max": 5.790700447435,
+        "rolling_sharpe_last": 1.901415786845,
+        "ols_excess_return_model": {
+          "alpha": 0.000600701383,
+          "beta": 0.983958576592,
+          "r_squared": 0.882120395264,
+          "residual_std": 0.005251614342,
+          "trend_label": "positive_alpha"
+        }
+      },
+      "fundamental|risk_seeking": {
+        "selected_tickers": [
+          "AAPL",
+          "MSFT",
+          "NVDA",
+          "AMD",
+          "AVGO",
+          "ADBE",
+          "CRM",
+          "ORCL",
+          "INTC",
+          "QCOM",
+          "CSCO",
+          "NOW",
+          "PANW",
+          "ZS",
+          "SNOW"
+        ],
+        "selected_count": 15,
+        "cumulative_return": -0.036971783754,
+        "annualized_volatility": 0.230355538243,
+        "max_drawdown": -0.129100234225,
+        "sharpe_ratio": -0.620852378134,
+        "benchmark_excess_return": 0.0,
+        "rolling_sharpe_min": -7.208393841149,
+        "rolling_sharpe_max": 5.8408331464,
+        "rolling_sharpe_last": 1.187242395744,
+        "ols_excess_return_model": {
+          "alpha": 0.0,
+          "beta": 1.0,
+          "r_squared": 1.0,
+          "residual_std": 0.0,
+          "trend_label": "flat_alpha"
+        }
+      },
+      "sentiment|risk_neutral": {
+        "selected_tickers": [
+          "AAPL",
+          "NVDA",
+          "AMD",
+          "AVGO",
+          "QCOM",
+          "CSCO"
+        ],
+        "selected_count": 6,
+        "cumulative_return": 0.192932315014,
+        "annualized_volatility": 0.262246128136,
+        "max_drawdown": -0.128114435446,
+        "sharpe_ratio": 1.963955571692,
+        "benchmark_excess_return": 0.229904098768,
+        "rolling_sharpe_min": -5.007786530422,
+        "rolling_sharpe_max": 8.903772565522,
+        "rolling_sharpe_last": 7.357485387606,
+        "ols_excess_return_model": {
+          "alpha": 0.002574281969,
+          "beta": 0.934743994184,
+          "r_squared": 0.674166265262,
+          "residual_std": 0.009487849879,
+          "trend_label": "positive_alpha"
+        }
+      },
+      "sentiment|risk_averse": {
+        "selected_tickers": [
+          "AAPL",
+          "NVDA",
+          "AMD",
+          "AVGO",
+          "QCOM",
+          "CSCO"
+        ],
+        "selected_count": 6,
+        "cumulative_return": 0.192932315014,
+        "annualized_volatility": 0.262246128136,
+        "max_drawdown": -0.128114435446,
+        "sharpe_ratio": 1.963955571692,
+        "benchmark_excess_return": 0.229904098768,
+        "rolling_sharpe_min": -5.007786530422,
+        "rolling_sharpe_max": 8.903772565522,
+        "rolling_sharpe_last": 7.357485387606,
+        "ols_excess_return_model": {
+          "alpha": 0.002574281969,
+          "beta": 0.934743994184,
+          "r_squared": 0.674166265262,
+          "residual_std": 0.009487849879,
+          "trend_label": "positive_alpha"
+        }
+      },
+      "sentiment|risk_seeking": {
+        "selected_tickers": [
+          "AAPL",
+          "MSFT",
+          "NVDA",
+          "AMD",
+          "AVGO",
+          "ADBE",
+          "ORCL",
+          "INTC",
+          "QCOM",
+          "CSCO",
+          "NOW",
+          "PANW",
+          "SNOW"
+        ],
+        "selected_count": 13,
+        "cumulative_return": -0.006774246005,
+        "annualized_volatility": 0.223891905813,
+        "max_drawdown": -0.116695725011,
+        "sharpe_ratio": -0.227033125502,
+        "benchmark_excess_return": 0.030197537749,
+        "rolling_sharpe_min": -6.768867183874,
+        "rolling_sharpe_max": 6.160507725241,
+        "rolling_sharpe_last": 2.333748079226,
+        "ols_excess_return_model": {
+          "alpha": 0.000341194276,
+          "beta": 0.956616245648,
+          "r_squared": 0.968718566741,
+          "residual_std": 0.00250982169,
+          "trend_label": "positive_alpha"
+        }
+      },
+      "multi_agent|risk_neutral": {
+        "selected_tickers": [
+          "AAPL",
+          "MSFT",
+          "NVDA",
+          "AMD",
+          "AVGO",
+          "ADBE",
+          "CRM",
+          "ORCL",
+          "QCOM",
+          "CSCO",
+          "NOW",
+          "PANW",
+          "SNOW"
+        ],
+        "selected_count": 13,
+        "cumulative_return": 0.004323520564,
+        "annualized_volatility": 0.235273576573,
+        "max_drawdown": -0.106089322232,
+        "sharpe_ratio": -0.061458900278,
+        "benchmark_excess_return": 0.041295304318,
+        "rolling_sharpe_min": -6.151593677804,
+        "rolling_sharpe_max": 6.443348772335,
+        "rolling_sharpe_last": 1.398173616508,
+        "ols_excess_return_model": {
+          "alpha": 0.0005151469,
+          "beta": 1.0088139402,
+          "r_squared": 0.975603861704,
+          "residual_std": 0.002329139331,
+          "trend_label": "positive_alpha"
+        }
+      },
+      "multi_agent|risk_averse": {
+        "selected_tickers": [
+          "MSFT",
+          "NVDA",
+          "ADBE",
+          "ORCL",
+          "QCOM",
+          "CSCO",
+          "NOW"
+        ],
+        "selected_count": 7,
+        "cumulative_return": 0.072122104708,
+        "annualized_volatility": 0.232230769528,
+        "max_drawdown": -0.101253527608,
+        "sharpe_ratio": 0.788981474539,
+        "benchmark_excess_return": 0.109093888462,
+        "rolling_sharpe_min": -6.980289796394,
+        "rolling_sharpe_max": 8.932269200935,
+        "rolling_sharpe_last": 2.462285795328,
+        "ols_excess_return_model": {
+          "alpha": 0.001250115158,
+          "beta": 0.921607974929,
+          "r_squared": 0.83570488422,
+          "residual_std": 0.005966129649,
+          "trend_label": "positive_alpha"
+        }
+      },
+      "multi_agent|risk_seeking": {
+        "selected_tickers": [
+          "AAPL",
+          "MSFT",
+          "NVDA",
+          "AMD",
+          "AVGO",
+          "ADBE",
+          "CRM",
+          "ORCL",
+          "INTC",
+          "QCOM",
+          "CSCO",
+          "NOW",
+          "PANW",
+          "ZS",
+          "SNOW"
+        ],
+        "selected_count": 15,
+        "cumulative_return": -0.036971783754,
+        "annualized_volatility": 0.230355538243,
+        "max_drawdown": -0.129100234225,
+        "sharpe_ratio": -0.620852378134,
+        "benchmark_excess_return": 0.0,
+        "rolling_sharpe_min": -7.208393841149,
+        "rolling_sharpe_max": 5.8408331464,
+        "rolling_sharpe_last": 1.187242395744,
+        "ols_excess_return_model": {
+          "alpha": 0.0,
+          "beta": 1.0,
+          "r_squared": 1.0,
+          "residual_std": 0.0,
+          "trend_label": "flat_alpha"
+        }
+      }
+    },
+    "benchmark_metrics": {
+      "cumulative_return": -0.036971783754,
+      "annualized_volatility": 0.230355538243,
+      "max_drawdown": -0.129100234225,
+      "sharpe_ratio": -0.620852378134
+    },
+    "rankings": {
+      "by_cumulative_return_desc": [
+        "sentiment|risk_neutral",
+        "sentiment|risk_averse",
+        "multi_agent|risk_averse",
+        "fundamental|risk_averse",
+        "multi_agent|risk_neutral",
+        "sentiment|risk_seeking",
+        "fundamental|risk_neutral",
+        "valuation|risk_seeking",
+        "valuation|risk_neutral",
+        "fundamental|risk_seeking",
+        "multi_agent|risk_seeking",
+        "valuation|risk_averse"
+      ],
+      "by_sharpe_desc": [
+        "sentiment|risk_neutral",
+        "sentiment|risk_averse",
+        "multi_agent|risk_averse",
+        "fundamental|risk_averse",
+        "multi_agent|risk_neutral",
+        "sentiment|risk_seeking",
+        "valuation|risk_seeking",
+        "fundamental|risk_neutral",
+        "valuation|risk_neutral",
+        "fundamental|risk_seeking",
+        "multi_agent|risk_seeking",
+        "valuation|risk_averse"
+      ],
+      "by_drawdown_asc": [
+        "multi_agent|risk_averse",
+        "multi_agent|risk_neutral",
+        "fundamental|risk_neutral",
+        "sentiment|risk_seeking",
+        "valuation|risk_neutral",
+        "sentiment|risk_neutral",
+        "sentiment|risk_averse",
+        "fundamental|risk_seeking",
+        "multi_agent|risk_seeking",
+        "valuation|risk_seeking",
+        "fundamental|risk_averse",
+        "valuation|risk_averse"
+      ],
+      "by_volatility_asc": [
+        "sentiment|risk_seeking",
+        "fundamental|risk_neutral",
+        "fundamental|risk_seeking",
+        "multi_agent|risk_seeking",
+        "multi_agent|risk_averse",
+        "multi_agent|risk_neutral",
+        "fundamental|risk_averse",
+        "valuation|risk_averse",
+        "valuation|risk_neutral",
+        "sentiment|risk_neutral",
+        "sentiment|risk_averse",
+        "valuation|risk_seeking"
+      ]
+    }
+  },
+  "risk_profile_audit": {
+    "agent_risk_profiles": {
+      "valuation": {
+        "selected_sets": {
+          "risk_neutral": [
+            "MSFT",
+            "NVDA",
+            "AMD",
+            "AVGO",
+            "ADBE",
+            "CRM",
+            "ORCL",
+            "QCOM",
+            "CSCO",
+            "NOW",
+            "PANW",
+            "ZS",
+            "SNOW"
+          ],
+          "risk_averse": [
+            "MSFT",
+            "ADBE",
+            "CRM",
+            "ORCL",
+            "CSCO",
+            "NOW",
+            "PANW"
+          ],
+          "risk_seeking": [
+            "MSFT",
+            "NVDA",
+            "AMD",
+            "AVGO",
+            "ADBE",
+            "CRM",
+            "ORCL",
+            "QCOM",
+            "NOW",
+            "PANW",
+            "ZS",
+            "SNOW"
+          ]
+        },
+        "jaccard": {
+          "risk_neutral|risk_averse": 0.538461538462,
+          "risk_neutral|risk_seeking": 0.923076923077,
+          "risk_averse|risk_seeking": 0.461538461538
+        },
+        "risk_feature_means": {
+          "risk_neutral": {
+            "january_return": 0.105844993848,
+            "january_annualized_volatility": 0.287285822413,
+            "january_max_drawdown": -0.039009658587,
+            "january_beta_to_equal_weight_universe": 0.979603171695,
+            "january_average_volume": 51643127.83882784
+          },
+          "risk_averse": {
+            "january_return": 0.085453065166,
+            "january_annualized_volatility": 0.220126113157,
+            "january_max_drawdown": -0.028382492389,
+            "january_beta_to_equal_weight_universe": 0.709154328686,
+            "january_average_volume": 10350545.578231294
+          },
+          "risk_seeking": {
+            "january_return": 0.114565639509,
+            "january_annualized_volatility": 0.295433016938,
+            "january_max_drawdown": -0.03883668149,
+            "january_beta_to_equal_weight_universe": 1.018992247454,
+            "january_average_volume": 54432587.3015873
+          }
+        },
+        "monotonicity_violations": [],
+        "risk_seeking_similarity_to_neutral": 0.923076923077,
+        "cvxpy_projection": {
+          "solver": "OSQP",
+          "status": "optimal",
+          "objective_value": 0.0,
+          "projected_average_volatility": 0.220126113157,
+          "max_absolute_decision_shift": 0.0
+        }
+      },
+      "fundamental": {
+        "selected_sets": {
+          "risk_neutral": [
+            "AAPL",
+            "MSFT",
+            "NVDA",
+            "AMD",
+            "AVGO",
+            "ADBE",
+            "CRM",
+            "ORCL",
+            "INTC",
+            "QCOM",
+            "CSCO",
+            "NOW",
+            "PANW",
+            "SNOW"
+          ],
+          "risk_averse": [
+            "MSFT",
+            "NVDA",
+            "AMD",
+            "AVGO",
+            "ADBE",
+            "CRM",
+            "ORCL",
+            "INTC",
+            "QCOM",
+            "CSCO",
+            "NOW"
+          ],
+          "risk_seeking": [
+            "AAPL",
+            "MSFT",
+            "NVDA",
+            "AMD",
+            "AVGO",
+            "ADBE",
+            "CRM",
+            "ORCL",
+            "INTC",
+            "QCOM",
+            "CSCO",
+            "NOW",
+            "PANW",
+            "ZS",
+            "SNOW"
+          ]
+        },
+        "jaccard": {
+          "risk_neutral|risk_averse": 0.785714285714,
+          "risk_neutral|risk_seeking": 0.933333333333,
+          "risk_averse|risk_seeking": 0.733333333333
+        },
+        "risk_feature_means": {
+          "risk_neutral": {
+            "january_return": 0.082917605331,
+            "january_annualized_volatility": 0.293359227232,
+            "january_max_drawdown": -0.046991635382,
+            "january_beta_to_equal_weight_universe": 0.996637711521,
+            "january_average_volume": 55280880.952380955
+          },
+          "risk_averse": {
+            "january_return": 0.087401042481,
+            "january_annualized_volatility": 0.29218271983,
+            "january_max_drawdown": -0.046816360542,
+            "january_beta_to_equal_weight_universe": 1.012903301252,
+            "january_average_volume": 64181413.852813855
+          },
+          "risk_seeking": {
+            "january_return": 0.084704044641,
+            "january_annualized_volatility": 0.295520539504,
+            "january_max_drawdown": -0.046410721151,
+            "january_beta_to_equal_weight_universe": 1.0,
+            "january_average_volume": 51710895.87301587
+          }
+        },
+        "monotonicity_violations": [
+          "higher_average_beta"
+        ],
+        "risk_seeking_similarity_to_neutral": 0.933333333333,
+        "cvxpy_projection": {
+          "solver": "OSQP",
+          "status": "optimal",
+          "objective_value": 0.0,
+          "projected_average_volatility": 0.29218271983,
+          "max_absolute_decision_shift": 0.0
+        }
+      },
+      "sentiment": {
+        "selected_sets": {
+          "risk_neutral": [
+            "AAPL",
+            "NVDA",
+            "AMD",
+            "AVGO",
+            "QCOM",
+            "CSCO"
+          ],
+          "risk_averse": [
+            "AAPL",
+            "NVDA",
+            "AMD",
+            "AVGO",
+            "QCOM",
+            "CSCO"
+          ],
+          "risk_seeking": [
+            "AAPL",
+            "MSFT",
+            "NVDA",
+            "AMD",
+            "AVGO",
+            "ADBE",
+            "ORCL",
+            "INTC",
+            "QCOM",
+            "CSCO",
+            "NOW",
+            "PANW",
+            "SNOW"
+          ]
+        },
+        "jaccard": {
+          "risk_neutral|risk_averse": 1.0,
+          "risk_neutral|risk_seeking": 0.461538461538,
+          "risk_averse|risk_seeking": 0.461538461538
+        },
+        "risk_feature_means": {
+          "risk_neutral": {
+            "january_return": 0.104690226188,
+            "january_annualized_volatility": 0.312682386212,
+            "january_max_drawdown": -0.050025119609,
+            "january_beta_to_equal_weight_universe": 1.111731492904,
+            "january_average_volume": 111133150.79365079
+          },
+          "risk_averse": {
+            "january_return": 0.104690226188,
+            "january_annualized_volatility": 0.312682386212,
+            "january_max_drawdown": -0.050025119609,
+            "january_beta_to_equal_weight_universe": 1.111731492904,
+            "january_average_volume": 111133150.79365079
+          },
+          "risk_seeking": {
+            "january_return": 0.081799690256,
+            "january_annualized_volatility": 0.296879342037,
+            "january_max_drawdown": -0.048797266812,
+            "january_beta_to_equal_weight_universe": 1.006311013767,
+            "january_average_volume": 59110343.58974359
+          }
+        },
+        "monotonicity_violations": [],
+        "risk_seeking_similarity_to_neutral": 0.461538461538,
+        "cvxpy_projection": {
+          "solver": "OSQP",
+          "status": "optimal",
+          "objective_value": 0.0,
+          "projected_average_volatility": 0.312682386212,
+          "max_absolute_decision_shift": 0.0
+        }
+      },
+      "multi_agent": {
+        "selected_sets": {
+          "risk_neutral": [
+            "AAPL",
+            "MSFT",
+            "NVDA",
+            "AMD",
+            "AVGO",
+            "ADBE",
+            "CRM",
+            "ORCL",
+            "QCOM",
+            "CSCO",
+            "NOW",
+            "PANW",
+            "SNOW"
+          ],
+          "risk_averse": [
+            "MSFT",
+            "NVDA",
+            "ADBE",
+            "ORCL",
+            "QCOM",
+            "CSCO",
+            "NOW"
+          ],
+          "risk_seeking": [
+            "AAPL",
+            "MSFT",
+            "NVDA",
+            "AMD",
+            "AVGO",
+            "ADBE",
+            "CRM",
+            "ORCL",
+            "INTC",
+            "QCOM",
+            "CSCO",
+            "NOW",
+            "PANW",
+            "ZS",
+            "SNOW"
+          ]
+        },
+        "jaccard": {
+          "risk_neutral|risk_averse": 0.538461538462,
+          "risk_neutral|risk_seeking": 0.866666666667,
+          "risk_averse|risk_seeking": 0.466666666667
+        },
+        "risk_feature_means": {
+          "risk_neutral": {
+            "january_return": 0.096891619705,
+            "january_annualized_volatility": 0.278547681038,
+            "january_max_drawdown": -0.040313733597,
+            "january_beta_to_equal_weight_universe": 0.959168691218,
+            "january_average_volume": 55859749.08424909
+          },
+          "risk_averse": {
+            "january_return": 0.095067076112,
+            "january_annualized_volatility": 0.230481232606,
+            "january_max_drawdown": -0.032664268126,
+            "january_beta_to_equal_weight_universe": 0.809482794728,
+            "january_average_volume": 75974365.98639455
+          },
+          "risk_seeking": {
+            "january_return": 0.084704044641,
+            "january_annualized_volatility": 0.295520539504,
+            "january_max_drawdown": -0.046410721151,
+            "january_beta_to_equal_weight_universe": 1.0,
+            "january_average_volume": 51710895.87301587
+          }
+        },
+        "monotonicity_violations": [],
+        "risk_seeking_similarity_to_neutral": 0.866666666667,
+        "cvxpy_projection": {
+          "solver": "OSQP",
+          "status": "optimal",
+          "objective_value": 0.0,
+          "projected_average_volatility": 0.230481232606,
+          "max_absolute_decision_shift": 0.0
+        }
+      }
+    },
+    "total_monotonicity_violation_count": 1
+  },
+  "summary": {
+    "all_claims_supported_or_missing_by_design": true,
+    "all_debates_valid": true,
+    "all_consensus_decisions_reconciled": true,
+    "multi_agent_risk_neutral_outperforms_benchmark": true,
+    "risk_averse_has_lower_average_volatility_than_risk_neutral": true,
+    "cvxpy_projection_all_feasible": true,
+    "global_consistency_score": 0.983333333333,
+    "audit_signature": "portfolio_consistent_with_evidence_warnings",
+    "audit_signature_code": 2
+  }
+}
