@@ -5,7 +5,7 @@
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
 [![Reference](https://img.shields.io/badge/arXiv-2508.11152-red.svg)](https://arxiv.org/pdf/2508.11152)
 
-**Reference paper:** Zhao, T., Lyu, J., Jones, S., Garber, H., Pasquali, S., & Mehta, D. (2025). *AlphaAgents: Large Language Model based Multi-Agents for Equity Portfolio Constructions.* https://arxiv.org/pdf/2508.11152
+**Reference paper:** Zhao, T., Lyu, J., Jones, S., Garber, H., Pasquali, S., & Mehta, D. (2025). *AlphaAgents: Large Language Model based Multi-Agents for Equity Portfolio Constructions.* 
 
 ---
 
