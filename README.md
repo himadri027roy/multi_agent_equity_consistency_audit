@@ -1,21 +1,21 @@
 # Multi-Agent Equity Consistency Audit
 
-A deterministic Python audit framework for evaluating multi-agent equity research systems across evidence validation, debate consistency, risk-profile behavior, and realized portfolio performance.
+A deterministic Python project for auditing multi-agent equity research systems. The project checks whether specialist agents use the correct evidence, whether their reports are consistent with the decision table, whether debate-based consensus is valid, and whether the resulting portfolios behave sensibly across different risk profiles.
 
 ---
 
 ## 1. Project Overview
 
-This project implements a reproducible audit system for a multi-agent equity-research workflow. The benchmark assumes that several specialist agents analyze stocks under different information constraints and then produce investment recommendations through a debate-and-consensus process.
+This project studies a multi-agent equity research workflow where different agents analyze the same stock universe from different perspectives.
 
-The system audits four types of agents:
+The system contains four types of agents:
 
-- **Valuation Agent** — uses price, volume, and market-based evidence.
-- **Fundamental Agent** — uses filing-derived financial evidence.
-- **Sentiment Agent** — uses news-title and news-body evidence.
-- **Multi-Agent System** — combines specialist reports and debate records to generate a final consensus decision.
+- **Valuation agent**: focuses on price, volume, and market-based evidence.
+- **Fundamental agent**: focuses on filing-derived financial evidence.
+- **Sentiment agent**: focuses on news and textual sentiment evidence.
+- **Multi-agent system**: combines the specialist agents through debate and produces a final consensus recommendation.
 
-The core objective is not simply to backtest portfolios. The objective is to verify whether the entire decision chain is internally consistent:
+The main goal is to audit the full decision chain:
 
 ```text
 Evidence → Agent Report → Claim Support → Debate → Consensus Decision → Portfolio Performance → Risk-Profile Consistency
