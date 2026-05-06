@@ -1,25 +1,21 @@
-# Data Description
+# Multi-Agent Equity Consistency Audit
 
-This project uses a multi-file equity-agent benchmark.
+A deterministic Python audit framework for evaluating multi-agent equity research systems across evidence validation, debate consistency, risk-profile behavior, and realized portfolio performance.
 
-Expected input files:
+---
 
-- universe.csv
-- config.json
-- feature_schema.json
-- prices.csv
-- risk_free.csv
-- stock_features.csv
-- price_evidence.jsonl
-- filings_metadata.csv
-- filings_chunks.jsonl
-- news_articles.jsonl
-- agent_reports.jsonl
-- claim_evidence_links.csv
-- debate_logs.jsonl
-- agent_decisions.csv
+## 1. Project Overview
 
-A reproducible sample dataset is placed in:
+This project implements a reproducible audit system for a multi-agent equity-research workflow. The benchmark assumes that several specialist agents analyze stocks under different information constraints and then produce investment recommendations through a debate-and-consensus process.
+
+The system audits four types of agents:
+
+- **Valuation Agent** — uses price, volume, and market-based evidence.
+- **Fundamental Agent** — uses filing-derived financial evidence.
+- **Sentiment Agent** — uses news-title and news-body evidence.
+- **Multi-Agent System** — combines specialist reports and debate records to generate a final consensus decision.
+
+The core objective is not simply to backtest portfolios. The objective is to verify whether the entire decision chain is internally consistent:
 
 ```text
-data/sample/
+Evidence → Agent Report → Claim Support → Debate → Consensus Decision → Portfolio Performance → Risk-Profile Consistency
