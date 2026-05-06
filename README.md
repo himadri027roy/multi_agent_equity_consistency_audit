@@ -86,9 +86,10 @@ S_p = \frac{\mathrm{mean}(R_{p,t} - R_{f,t})}{\mathrm{std}(R_{p,t} - R_{f,t})} \
 $$
  
 The maximum drawdown is the minimum trough-to-peak ratio of the cumulative wealth process 
+
 $$ 
-V_{p,t} = \prod_{\tau \le t}(1 + R_{p,\tau}) 
-$$,
+V_{p,t} = \prod_{\tau \le t}(1 + R_{p,\tau}),
+$$
  
 $$
 D_p = \min_t \left( \frac{V_{p,t}}{\max_{\tau \le t} V_{p,\tau}} - 1 \right).
@@ -96,8 +97,9 @@ $$
  
 The rolling Sharpe ratio over a window of length $w$, computed from the excess-return process 
 $$ 
-R^{e}_t = R_{p,t} - R_{f,t}
-$$,
+R^{e}_t = R_{p,t} - R_{f,t},
+$$
+
 is given by
  
 $$
@@ -148,7 +150,7 @@ The repository adopts a flat, functionally partitioned layout in which inputs, d
 
 ```
 multi_agent_equity_consistency_audit/
-├── data/                                       # canonical benchmark inputs (14 files)
+├── data/                                       
 │   ├── agent_decisions.csv
 │   ├── agent_reports.jsonl
 │   ├── claim_evidence_links.csv
@@ -163,18 +165,18 @@ multi_agent_equity_consistency_audit/
 │   ├── risk_free.csv
 │   ├── stock_features.csv
 │   └── universe.csv
-├── figures/                                    # diagnostic visualisations
+├── figures/                                   
 │   ├── 01_global_consistency_score.png
 │   ├── 02_multi_agent_risk_neutral_vs_benchmark.png
 │   ├── 03_risk_return_scatter.png
 │   ├── 04_buy_selection_matrix.png
 │   ├── 05_return_correlation_heatmap.png
 │   └── 06_debate_message_graph.png
-├── results/                                    # canonical audit artefact
+├── results/                                    
 │   └── output.json
-├── tests/                                      # deterministic validation harness
+├── tests/                                      
 │   └── test.py
-├── run_audit.py                                # top-level invocation entry point
+├── run_audit.py                                
 ├── .gitignore
 └── README.md
 ```
