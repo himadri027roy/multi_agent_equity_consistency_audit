@@ -150,7 +150,7 @@ The repository adopts a flat, functionally partitioned layout in which inputs, d
 
 ```
 multi_agent_equity_consistency_audit/
-├── data/                                       
+├── data/
 │   ├── agent_decisions.csv
 │   ├── agent_reports.jsonl
 │   ├── claim_evidence_links.csv
@@ -165,18 +165,22 @@ multi_agent_equity_consistency_audit/
 │   ├── risk_free.csv
 │   ├── stock_features.csv
 │   └── universe.csv
-├── figures/                                   
+├── figures/
 │   ├── 01_global_consistency_score.png
 │   ├── 02_multi_agent_risk_neutral_vs_benchmark.png
 │   ├── 03_risk_return_scatter.png
 │   ├── 04_buy_selection_matrix.png
 │   ├── 05_return_correlation_heatmap.png
 │   └── 06_debate_message_graph.png
-├── results/                                    
+├── notebooks/
+│   └── multi_agent_equity_consistency_audit.ipynb
+├── results/
 │   └── output.json
-├── tests/                                      
+├── src/
+│   └── multi_agent_equity_consistency_audit.py
+├── tests/
 │   └── test.py
-├── run_audit.py                                
+├── run_audit.py
 ├── .gitignore
 └── README.md
 ```
