@@ -35,17 +35,25 @@ The full reference paper is available at https://arxiv.org/pdf/2508.11152.
 ---
 ## Why this project matters for quant / model risk roles
 
-### Implements a full audit of an LLM‑based equity research system, from raw evidence to portfolio performance.
+This project is relevant to quantitative finance, AI model risk, and model validation because it audits the full decision chain of an LLM-based equity research workflow rather than only evaluating final portfolio returns.
 
-### Enforces role‑restricted evidence use (valuation/fundamental/sentiment) and flags unsupported or inconsistent claims.
+- Implements a full audit pipeline from raw evidence, agent reports, and debate logs to realized portfolio performance.
 
-### Reconstructs debate graphs, checks consensus validity, and measures specialist influence via PageRank.
+- Enforces role-restricted evidence use across valuation, fundamental, sentiment, and multi-agent roles, flagging unsupported claims, missing evidence, decision mismatches, and role-access violations.
 
-### Builds equal‑weight BUY‑only portfolios and computes returns, volatility, Sharpe, drawdown, rolling Sharpe, and alpha/beta vs a benchmark.
+- Reconstructs multi-agent debate graphs, validates terminal consensus, detects unresolved dissent, and measures specialist influence using PageRank.
 
-### Tests risk‑profile monotonicity and solves a convex optimization to project risk‑averse portfolios onto a consistent volatility constraint.
+- Prevents lookahead bias by separating the analysis window from the portfolio evaluation window.
 
-### Designed with strict input validation and deterministic behavior, similar to bank model‑risk governance.
+- Builds equal-weight BUY-only portfolios and computes cumulative return, annualized volatility, Sharpe ratio, maximum drawdown, rolling Sharpe, and alpha/beta versus a benchmark.
+
+- Tests whether risk-averse, risk-neutral, and risk-seeking recommendations behave consistently with their stated risk profiles.
+
+- Uses convex optimization to project risk-averse portfolio selections onto a volatility-consistent constraint and reports solver feasibility.
+
+- Applies strict schema validation, deterministic execution, numerical tolerance controls, and reproducible output generation.
+
+- Mirrors bank-style model-risk governance by combining evidence validation, process validation, outcome analysis, monitoring flags, and documented limitations.
 
 ---
 
