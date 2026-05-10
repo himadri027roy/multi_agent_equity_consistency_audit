@@ -7,29 +7,6 @@
 
 **Reference paper:** Zhao, T., Lyu, J., Jones, S., Garber, H., Pasquali, S., & Mehta, D. (2025). *AlphaAgents: Large Language Model based Multi-Agents for Equity Portfolio Constructions.* 
 
----
-
-
-
-## Abstract
-
-This repository implements a deterministic auditing solver, `multi_agent_equity_consistency_audit`, for reconstructing and validating the complete consistency chain of an agentic equity research benchmark. The benchmark formalizes a workflow in which three role-restricted specialist agents, a valuation agent constrained to price-volume evidence, a fundamental agent constrained to filing-derived evidence, and a sentiment agent constrained to news-derived evidence, generate risk-profile-conditioned recommendations that are reconciled through structured multi-agent debate. The solver verifies four interlocking audit layers: role-access compliance and claim-evidence support; directed-graph reconstruction of debate logs with speaker-level PageRank aggregation and terminal-consensus reconciliation; realized portfolio performance under equal-weight BUY-only construction with rolling Sharpe diagnostics and alpha-beta excess-return regression; and risk-profile monotonicity with a constrained convex projection of risk-averse inclusion scores. The solver emits a single structured JSON object that summarizes the audit and assigns one discrete consistency signature from `{fully_consistent, portfolio_consistent_with_evidence_warnings, risk_profile_inconsistent, globally_inconsistent}`.
-
----
-
-## 1. Background and Motivation
-
-
-
-
-The deployment of multi-agent language-model architectures for portfolio construction raises substantive concerns regarding evidentiary integrity, role compartmentalization, and the reconciliation of disagreement among specialist agents. A coordinated debate among role-prompted agents may improve portfolio selection, but realized portfolio performance alone is not sufficient to establish methodological coherence. A portfolio that outperforms its benchmark while relying on unsupported claims, unauthorized evidence channels, or a terminal consensus that fails to reconcile with the dataset decision table is economically successful but audit-inconsistent. This solver treats the benchmark as a single coupled consistency problem rather than a collection of independent validation checks.
-
-
-The audit enforces a strict separation between the analysis window, where evidence and stock-level features are used to form decisions, and the portfolio window, where realized returns are evaluated. Portfolio-window prices must not be used to form, revise, or reinterpret analysis-window decisions. Available evidence dates are interpreted within the analysis window, while portfolio-window prices are reserved for realized-performance evaluation.
-
-The full reference paper is available at https://arxiv.org/pdf/2508.11152.
-
-
 
 
 ---
@@ -54,6 +31,31 @@ This project is relevant to quantitative finance, AI model risk, and model valid
 - Applies strict schema validation, deterministic execution, numerical tolerance controls, and reproducible output generation.
 
 - Mirrors bank-style model-risk governance by combining evidence validation, process validation, outcome analysis, monitoring flags, and documented limitations.
+
+---
+
+## Abstract
+
+This repository implements a deterministic auditing solver, `multi_agent_equity_consistency_audit`, for reconstructing and validating the complete consistency chain of an agentic equity research benchmark. The benchmark formalizes a workflow in which three role-restricted specialist agents, a valuation agent constrained to price-volume evidence, a fundamental agent constrained to filing-derived evidence, and a sentiment agent constrained to news-derived evidence, generate risk-profile-conditioned recommendations that are reconciled through structured multi-agent debate. The solver verifies four interlocking audit layers: role-access compliance and claim-evidence support; directed-graph reconstruction of debate logs with speaker-level PageRank aggregation and terminal-consensus reconciliation; realized portfolio performance under equal-weight BUY-only construction with rolling Sharpe diagnostics and alpha-beta excess-return regression; and risk-profile monotonicity with a constrained convex projection of risk-averse inclusion scores. The solver emits a single structured JSON object that summarizes the audit and assigns one discrete consistency signature from `{fully_consistent, portfolio_consistent_with_evidence_warnings, risk_profile_inconsistent, globally_inconsistent}`.
+
+---
+
+## 1. Background and Motivation
+
+
+
+
+The deployment of multi-agent language-model architectures for portfolio construction raises substantive concerns regarding evidentiary integrity, role compartmentalization, and the reconciliation of disagreement among specialist agents. A coordinated debate among role-prompted agents may improve portfolio selection, but realized portfolio performance alone is not sufficient to establish methodological coherence. A portfolio that outperforms its benchmark while relying on unsupported claims, unauthorized evidence channels, or a terminal consensus that fails to reconcile with the dataset decision table is economically successful but audit-inconsistent. This solver treats the benchmark as a single coupled consistency problem rather than a collection of independent validation checks.
+
+
+The audit enforces a strict separation between the analysis window, where evidence and stock-level features are used to form decisions, and the portfolio window, where realized returns are evaluated. Portfolio-window prices must not be used to form, revise, or reinterpret analysis-window decisions. Available evidence dates are interpreted within the analysis window, while portfolio-window prices are reserved for realized-performance evaluation.
+
+The full reference paper is available at https://arxiv.org/pdf/2508.11152.
+
+
+
+
+
 
 ---
 
