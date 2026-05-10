@@ -29,6 +29,24 @@ The audit enforces a strict separation between the analysis window, where eviden
 
 The full reference paper is available at https://arxiv.org/pdf/2508.11152.
 
+
+
+
+---
+## Why this project matters for quant / model risk roles
+
+### Implements a full audit of an LLM‑based equity research system, from raw evidence to portfolio performance.
+
+### Enforces role‑restricted evidence use (valuation/fundamental/sentiment) and flags unsupported or inconsistent claims.
+
+### Reconstructs debate graphs, checks consensus validity, and measures specialist influence via PageRank.
+
+### Builds equal‑weight BUY‑only portfolios and computes returns, volatility, Sharpe, drawdown, rolling Sharpe, and alpha/beta vs a benchmark.
+
+### Tests risk‑profile monotonicity and solves a convex optimization to project risk‑averse portfolios onto a consistent volatility constraint.
+
+### Designed with strict input validation and deterministic behavior, similar to bank model‑risk governance.
+
 ---
 
 ## 2. Methodological Architecture
